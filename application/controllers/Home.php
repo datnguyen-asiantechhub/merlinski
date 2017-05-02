@@ -62,6 +62,7 @@ class Home extends CI_Controller
 
 	$this->load->view('sasscompile/build');
 	$this->load->view('templates/header', $this->data);
+	$this->load->view('pages/admin_homepage', $this->data);
 	//$this->load->view('pages/homepage', $this->data);
 	//$this->load->view('templates/footer');
 }

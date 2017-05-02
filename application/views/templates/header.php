@@ -1,11 +1,3 @@
-<?php
-    include_once("application/views/sasscompile/build.php");
-?>
-
-<!-- javascript to handle form submission and login submisson
-<link rel="stylesheet" href="application/libraries/javascript/js/jquery-ui-1.11.1.custom/jquery-ui.min.css"/>-->
-
-
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/bootstrap.min.js"></script>
 
@@ -35,7 +27,7 @@
     <div class="row">
         
         <div id="logo" class="col-sm-3">
-            <img src="<?php echo base_url();?>application/views/assets/images/logo.png" />
+            <img src="<?php echo base_url();?>application/views/assets/images/logo.jpg" />
         </div>
         <div class="col-sm-9 pull-right">
             <p>Welcome Administrator</p>
