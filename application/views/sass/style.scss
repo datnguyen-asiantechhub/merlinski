@@ -1,3 +1,9 @@
-header{
-	background: #0077c0;
-}
+@import '1_template';
+@import '2_template';
+@import 'fontface';
+@import 'responsive/320px-max';
+@import 'responsive/360px-max';
+@import 'responsive/480px-max';
+@import 'responsive/767px-max';
+@import 'responsive/768px-979px';
+@import 'responsive/1200px-min';
