@@ -1,0 +1,27 @@
+.top-bar{
+	width: 100%;
+	min-height: 42px;
+	background-color: #7ac142;
+}
+.welcome{
+	float: left;
+	color: #ffffff;
+}
+.telephone{
+	float: right;
+	margin-top: 10px;
+	color: #ffffff;
+}
+.navbar-brand{
+	min-height: 50px !important;
+}
+.head-nav{
+	margin-top: 15px;
+}
+.search-form{
+	margin-top: 20px;
+}
+.title{
+	width: 100%;
+	background-color: #0077c0;
+}
