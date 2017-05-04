@@ -1,3 +1,6 @@
+/*
+*=========header=========
+*/
 .top-bar{
 	width: 100%;
 	min-height: 42px;
@@ -24,4 +27,15 @@
 .title{
 	width: 100%;
 	background-color: #0077c0;
+}
+.breadcrumb{
+	margin-top:10px;
+	margin-bottom: 10px;
+	background: none;
+}
+.breadcrumb a{
+	color: #ffffff;
+}
+.breadcrumb > li + li:before{
+	content: ">";
 }
