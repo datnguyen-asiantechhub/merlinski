@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../../../libraries/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../../assets/css/mystyle.css">
 <script type="text/javascript" src="../../../libraries/bootstrap/js/jquery.min.js"></script>
-	<title></title>
+	<title>Reset Password</title>
 </head>
 <body>
 <header>
@@ -54,12 +54,12 @@
 					    <input type="submit" class="btn search-button" >
 					 </div>
 				</form>
-				<div class="">
-					<div class="">
-						<span class=""></span>
+				<div class="cart-accoount">
+					<div class="cart-wrap">
+						<span class="cart"></span>
 					</div>
-					<dvi class="">
-						<span class=""></span>
+					<dvi class="account-wrap">
+						<span class="account"></span>
 					</dvi>
 				</div>
 			</nav>
