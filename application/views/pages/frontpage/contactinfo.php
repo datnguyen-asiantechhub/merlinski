@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../../../libraries/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../../assets/css/mystyle.css">
+<link rel="stylesheet" href="../../assets/css/infostyle.css">
 <link href="https://fonts.googleapis.com/css?family=Century+Gothic" rel="stylesheet">
 <script type="text/javascript" src="../../../libraries/bootstrap/js/jquery.min.js"></script>
 <title>Reset Password</title>
