@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../../../libraries/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../../assets/css/mystyle.css">
 <script type="text/javascript" src="../../../libraries/bootstrap/js/jquery.min.js"></script>
-	<title>Reset Password</title>
+<title>Reset Password</title>
 </head>
 <body>
 <header>
@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sx-12 col-sm-12 col-md-12">
-					<p class="telephone"><span>0800 80 40 20</span> - 6 Days a week from 9:00am to 22:00pm <a class="btn btn-warning btn-xs" >USD</a></p>
+					<p class="telephone"><span>0800 80 40 20</span> - 6 Days a week from 9:00am to 22:00pm <a class="btn btn-warning btn-xs currency" >USD</a></p>
 					<h4 class="welcome">Welcome to FallsCreek</h4>
 				</div>	
 			</div>
@@ -51,15 +51,16 @@
 				<form method="POST" action="" class="navbar-form navbar-left search-form" role="search">
 					 <div class="form-group search-box">
 					    <input type="text" class="form-control search-text" placeholder="Search product, catergories...">
-					    <input type="submit" class="btn search-button" >
+					    <input type="submit" class="btn search-button" value="">
 					 </div>
 				</form>
-				<div class="cart-accoount">
+				<div class="cart-account">
 					<div class="cart-wrap">
-						<span class="cart"></span>
+						<span id="cart-count" class="badge">4</span>
+						<span class="total-price">324.87</span>
 					</div>
 					<dvi class="account-wrap">
-						<span class="account"></span>
+						<span id="account-name" class="account">My Account</span>
 					</dvi>
 				</div>
 			</nav>
@@ -81,16 +82,16 @@
 							<li>
 								<label>View</label>
 								<select class="selectpicker select-view">
-									<option>24</option>
-									<option>16</option>
-									<option>10</option>
+									<option value="24">24</option>
+									<option value="16">16</option>
+									<option value="10">10</option>
 								</select>
 							</li>
 							<li>
 								<label>Sort by Price </label>
 								<select class="selectpicker select-sort">
-									<option>High/Low</option>
-									<option>Low/High</option>
+									<option value="1">High/Low</option>
+									<option value="2">Low/High</option>
 								</select>
 							</li>
 						</ul>
@@ -103,11 +104,11 @@
 <main>
 	<div class="container">
 		<div class="row">
-			<div class="col-sx-12 col-sm-3 col-md-3">
+			<div class="col-sx-12 col-sm-4 col-md-3">
 				<div class="left-side">
 					<ul class="nav nav-pills nav-stacked sidenav">
-						<li><a href="">Account info <span class="glyphicon glyphicon-chevron-right"></a></li>
-						<li><a href="">My Tickets <span class="badge">33</span> <span class="glyphicon glyphicon-chevron-right"></a></li>
+						<li><a href="">Account info <span class="glyphicon glyphicon-chevron-right right-arrow"></a></li>
+						<li><a href="">My Tickets <span class="badge">33</span> <span class="glyphicon glyphicon-chevron-right right-arrow"></a></li>
 						<li><a href="">My Vouchers</a></li>
 						<li><a href="">Order History</a></li>
 						<li><a href="">Rental Settings</a></li>
@@ -115,13 +116,13 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sx-12 col-sm- col-md-9">
+			<div class="col-sx-12 col-sm-8 col-md-9">
 				<div class="main-content">
 					<h1>Change Password</h1>
 					<form class="change-pass" method="POST" action="">
-						<input class="form-control" type="Password" name="old_pass" placeholder="Current Password">
-						<input class="form-control" type="Password" name="new_pass" placeholder="Mew Passsword">
-						<input class="form-control" type="Password" name="renew_pass" placeholder="Confirm Password">
+						<input class="form-control input-pass" type="password" name="old_pass" placeholder="Current Password">
+						<input class="form-control input-pass" type="password" name="new_pass" placeholder="Mew Passsword">
+						<input class="form-control input-pass" type="password" name="renew_pass" placeholder="Confirm Password">
 						<input class="btn btn-warning btn-lg" type="submit" value="Change">
 					</form>
 				</div>
@@ -180,7 +181,7 @@
 							<form method="POST" action="">
 								<div class="search-box">
 									<input class="form-control footer-search" type="text" name="foot_search">
-									<input class="btn search-button" type="submit" name="search">
+									<input class="btn search-button" type="submit" name="search" value="">
 								</div>
 							</form>
 							<p class="search-tip">Popular item: Ski, resort, outdoor, booking, daytime</p>
@@ -189,7 +190,7 @@
 							<a  href=""><span class="sc-blog"></span></a>
 							<a  href=""><span class="sc-print"></span></a>
 							<a  href=""><span class="sc-instagram"></span></a>
-							<a  href=""><span class="sc-youtube.com"></span></a>
+							<a  href=""><span class="sc-youtube"></span></a>
 							<a  href=""><span class="sc-facebook"></span></a>
 							<a  href=""><span class="sc-tweeter"></span></a>
 							<a  href=""><span class="sc-google"> </span></a>
