@@ -1,0 +1,13 @@
+.user-table-info td, th{
+	padding:0px !important;
+	padding-bottom: 6px !important;
+	border:none !important;
+}
+.user-table-info th{
+	max-width: 60px !important;
+	font-weight: normal;
+}
+.change-info{
+	width: 180px;
+	height: 45px;
+}
