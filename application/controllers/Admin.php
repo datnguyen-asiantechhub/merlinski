@@ -18,14 +18,8 @@ class Admin extends CI_Controller{
    }
 
 
-   public function login(){
-      $data['subview'] = 'pages/admin/loginadmin';
-      $data['title'] = 'Admin System';
-      $this->load->view('pages/admin/main',$data);
-  }
+  
 
-}
-?>
 
 }
 ?>
