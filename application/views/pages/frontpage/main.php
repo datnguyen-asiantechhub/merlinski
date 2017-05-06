@@ -24,7 +24,7 @@
             <img src="<?php echo base_url();?>application/views/assets/images/logo.jpg" />
         </div>
         <div class="col-sm-9 pull-right">
-            <p>Welcome Administrator</p>
+            <p>Welcome Administrator</p> test
         </div>   
     </div>
 </div>
