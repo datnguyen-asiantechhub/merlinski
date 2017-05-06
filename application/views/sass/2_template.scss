@@ -57,7 +57,7 @@
 	width: 75px;
 	height: 65px;
 }
-.account-wrap{@extend .cart-wrap}
+.account-wrap{@extend .cart-wrap;}
 .cart-wrap{
 	background-image: url(../../assets/images/img_03.png);
 	background-position: top center;
@@ -248,7 +248,7 @@ main{padding-bottom: 40px;}
 		border:none !important;
 	}
 	th{
-		@extend td
+		@extend td;
 		max-width: 60px !important;
 		font-weight: normal;
 	}
