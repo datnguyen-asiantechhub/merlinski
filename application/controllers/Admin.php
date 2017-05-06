@@ -1,3 +1,6 @@
+
+<?php
+
 class Admin extends CI_Controller{
    public function __construct() {
        parent::__construct();
@@ -9,9 +12,16 @@ class Admin extends CI_Controller{
        $data['title'] = 'Admin System';
        $this->load->view('pages/admin/main',$data);
    }
+
+
+
    public function login(){
       $data['subview'] = 'pages/admin/loginadmin';
       $data['title'] = 'Admin System';
       $this->load->view('pages/admin/main',$data);
   }
 }
+
+?>
+
+
