@@ -11,5 +11,10 @@ class Frontpage extends CI_Controller{
        $data['title'] = 'Frontpage System';
        $this->load->view('pages/frontpage/main',$data);
    }
+   public function homepage(){
+       $data['subview'] = 'pages/frontpage/homepage';
+       $data['title'] = 'Frontpage System';
+       $this->load->view('pages/frontpage/main',$data);
+   }
 }
 ?>

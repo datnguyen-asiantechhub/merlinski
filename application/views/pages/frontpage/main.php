@@ -24,7 +24,7 @@
             <img src="<?php echo base_url();?>application/views/assets/images/logo.jpg" />
         </div>
         <div class="col-sm-9 pull-right">
-            <p>Welcome Administrator</p>
+            <p>Welcome Administrator</p> test test
         </div>   
     </div>
 </div>
@@ -32,7 +32,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <?php $this->load->view('templates/admin_leftmenu');?>
+            <?php $this->load->view('templates/frontend_leftmenu');?>
         </div>
         <div class="col-sm-9">
             <?php $this->load->view($subview);?>
