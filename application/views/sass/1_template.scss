@@ -1,3 +1,80 @@
 header{
 	background: #0077c0;
 }
+
+header{
+	#logo{
+		display: none;
+	}
+	#topposition{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	width: 100%;
+
+}
+#background{
+	background-color: white;
+	/*background-size: 200px 150px;
+	background-size: contain;*/
+	margin-bottom: 5%; 
+  	margin-left: 15%;
+  	margin-right: 10%;
+}
+#logo{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#banner{
+	margin-left: 0px;
+	margin-right: 50%;
+}
+#resize{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+#resizea{
+	margin-left: 50px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#logo{
+	margin-left: 0px;
+	margin-right: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#container{
+	background-color: gray;
+}
+#img{
+	background-color: white;
+}
+.row{
+	color: white;
+}
+#contact{
+	width: 10px;
+	height: 160px;
+	margin-top: 25px;
+	margin-left: 45px;
+	margin-bottom: 20px;
+
+}
+#contain{
+	width: 1400px;
+	height: 20%;
+}
+#logoa{
+	margin-right: 50px;
+	width: 70%;
+
+}
+}
+/**header{background:#0077c0;}@media (max-width:320px){header{background:#0077c0;}}**/
