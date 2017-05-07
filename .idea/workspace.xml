@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b4ad1c-6c78-4dfc-a53b-5de8690eb47a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/javascript/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/open_normal_vouchers_list.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Admin.php" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Data_model.php" afterPath="$PROJECT_DIR$/application/models/Data_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php" afterPath="$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/admin/main.php" afterPath="$PROJECT_DIR$/application/views/pages/admin/main.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,48 +23,18 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="657">
+              <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lost_passcard_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php">
+      <file leaf-file-name="open_normal_vouchers_list.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/open_normal_vouchers_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="797">
-              <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/libraries/javascript/js.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/templates/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="337">
+              <caret line="39" column="57" lean-forward="false" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -77,11 +44,12 @@
         <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="857">
-              <caret line="500" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="509" selection-end-column="2" />
+              <caret line="669" column="13" lean-forward="false" selection-start-line="669" selection-start-column="13" selection-end-line="669" selection-end-column="13" />
               <folding>
                 <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
                 <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
                 <element signature="n#createdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
+                <element signature="n#lostdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,11 +86,12 @@
         <option value="$PROJECT_DIR$/application/views/pages/admin/list_customer.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/customer_detail.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
-        <option value="$PROJECT_DIR$/application/models/Data_model.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php" />
         <option value="$PROJECT_DIR$/application/libraries/javascript/js.js" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/main.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
+        <option value="$PROJECT_DIR$/application/models/Data_model.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/admin/open_normal_vouchers_list.php" />
       </list>
     </option>
   </component>
@@ -422,12 +391,12 @@
       <workItem from="1493642229526" duration="1316000" />
       <workItem from="1494071329168" duration="73000" />
       <workItem from="1494086969978" duration="3539000" />
-      <workItem from="1494120347940" duration="17260000" />
+      <workItem from="1494120347940" duration="20218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23061000" />
+    <option name="totallyTimeSpent" value="26019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -473,13 +442,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/loginadmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -723,15 +685,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
+    <entry file="file://$PROJECT_DIR$/application/libraries/javascript/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="500" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="509" selection-end-column="2" />
-          <folding>
-            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#createdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="20">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,34 +709,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/javascript/js.js">
+    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="857">
+          <caret line="669" column="13" lean-forward="false" selection-start-line="669" selection-start-column="13" selection-end-line="669" selection-end-column="13" />
+          <folding>
+            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#createdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#lostdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="43" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="657">
+          <caret line="60" column="45" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php">
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/open_normal_vouchers_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+        <state relative-caret-position="337">
+          <caret line="39" column="57" lean-forward="false" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
           <folding />
         </state>
       </provider>

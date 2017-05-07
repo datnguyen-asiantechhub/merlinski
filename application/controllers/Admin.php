@@ -58,6 +58,15 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 
+	public function open_normal_vouchers_list()
+	{
+
+		$data['subview'] = 'pages/admin/open_normal_vouchers_list';
+		$data['title']   = 'Open vouchers';
+		$data['display_data'] = $this->data_model->open_normal_vouchers_list();
+		$this->load->view('pages/admin/main', $data);
+	}
+
 }
   
 
