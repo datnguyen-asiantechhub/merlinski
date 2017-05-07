@@ -57,7 +57,7 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->lostdpasscardList();
 		$this->load->view('pages/admin/main', $data);
 	}
-
+	/*Function for vouchers*/
 	public function open_normal_vouchers_list()
 	{
 
@@ -78,11 +78,19 @@ class Admin extends CI_Controller
 	{
 
 		$data['subview'] = 'pages/admin/open_secondary_vouchers';
-		$data['title']   = 'Close vouchers';
+		$data['title']   = 'Open secondary sale vouchers';
 		$data['display_data'] = $this->data_model->open_secondary_vouchers();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function closed_secondary_vouchers()
+	{
 
+		$data['subview'] = 'pages/admin/closed_secondary_vouchers';
+		$data['title']   = 'Close vouchers';
+		$data['display_data'] = $this->data_model->closed_secondary_vouchers();
+		$this->load->view('pages/admin/main', $data);
+	}
+	/*Function for vouchers*/
 	public function inactive_pass_card()
 	{
 
