@@ -41,6 +41,15 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->customerDetail();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function create_passcard_list()
+	{
+
+		$data['subview'] = 'pages/admin/create_passcard_list';
+		$data['title']   = 'Create Pass Card';
+		$data['display_data'] = $this->data_model->createdpasscardList();
+
+		$this->load->view('pages/admin/main', $data);
+	}
 
 }
   

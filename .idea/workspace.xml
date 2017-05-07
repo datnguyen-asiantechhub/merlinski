@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b4ad1c-6c78-4dfc-a53b-5de8690eb47a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/customer_detail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/assets/images/admin/u109.jpg" afterPath="$PROJECT_DIR$/application/views/assets/images/admin/u109.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Admin.php" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Data_model.php" afterPath="$PROJECT_DIR$/application/models/Data_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/pages/admin/list_customer.php" afterPath="$PROJECT_DIR$/application/views/pages/admin/list_customer.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,34 +24,19 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+            <state relative-caret-position="757">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_customer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/list_customer.php">
+      <file leaf-file-name="create_passcard_list.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="46" column="16" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="46" selection-end-column="16" />
+            <state relative-caret-position="260">
+              <caret line="13" column="71" lean-forward="false" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer_detail.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/customer_detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -59,10 +44,11 @@
       <file leaf-file-name="Data_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+            <state relative-caret-position="1477">
+              <caret line="351" column="13" lean-forward="false" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
               <folding>
                 <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
+                <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,9 +76,10 @@
         <option value="$PROJECT_DIR$/application/models/datasample.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/list_customer.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/admin/customer_detail.php" />
         <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
         <option value="$PROJECT_DIR$/application/models/Data_model.php" />
-        <option value="$PROJECT_DIR$/application/views/pages/admin/customer_detail.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php" />
       </list>
     </option>
   </component>
@@ -108,6 +95,9 @@
     <option name="y" value="-11" />
     <option name="width" value="1857" />
     <option name="height" value="1092" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -327,18 +317,18 @@
       <workItem from="1493642229526" duration="1316000" />
       <workItem from="1494071329168" duration="73000" />
       <workItem from="1494086969978" duration="3539000" />
-      <workItem from="1494120347940" duration="13033000" />
+      <workItem from="1494120347940" duration="14851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18834000" />
+    <option name="totallyTimeSpent" value="20652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12075472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17196766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -378,7 +368,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php" />
     <entry file="file://$PROJECT_DIR$/application/views/pages/homepage.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/Home.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/hello.php" />
@@ -611,42 +600,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/list_customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="46" column="16" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="46" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding>
-            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/admin/customer_detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
+          <caret line="144" column="38" lean-forward="false" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
           <folding>
             <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/list_customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1477">
+          <caret line="351" column="13" lean-forward="false" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+          <folding>
+            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/create_passcard_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="71" lean-forward="false" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
