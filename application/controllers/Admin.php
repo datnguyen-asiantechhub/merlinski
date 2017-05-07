@@ -33,6 +33,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->customersList();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function customer_detail()
+	{
+
+		$data['subview'] = 'pages/admin/customer_detail';
+		$data['title']   = 'All customers';
+		$data['display_data'] = $this->data_model->customerDetail();
+		$this->load->view('pages/admin/main', $data);
+	}
 
 }
   
