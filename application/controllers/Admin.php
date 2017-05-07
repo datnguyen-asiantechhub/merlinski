@@ -74,6 +74,15 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->closed_vouchers_list();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function inactive_pass_card()
+	{
+
+		$data['subview'] = 'pages/admin/inactive_pass_card';
+		$data['title']   = 'Inactive Pass Cards';
+		$data['display_data'] = $this->data_model->inactive_pass_card();
+		$this->load->view('pages/admin/main', $data);
+	}
+
 
 }
   
