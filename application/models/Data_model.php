@@ -355,5 +355,156 @@ class Data_model extends CI_Model
 
 		return $created_passcard_list;
 	}
+
+	public function lostdpasscardList()
+	{
+		$lostdpasscardList = array(
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			), array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'   => 'robert kenny',
+				'issue_date' => '12/03/2017',
+				'last_use'   => '12/03/2017',
+				'lost_date'  => '12/03/2017'
+			)
+
+
+		);
+
+		return $lostdpasscardList;
+	}
 }
+
 ?>

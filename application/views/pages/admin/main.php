@@ -14,6 +14,7 @@
    
     <meta content="text/html" charset="utf-8" />   
     <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/styles.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/select2.min.css"/>
 </head>
 <header>
 <?php $this->load->view('sasscompile/build'); ?>
@@ -47,4 +48,6 @@
 </body>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/select2/select2.full.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
 </html>
