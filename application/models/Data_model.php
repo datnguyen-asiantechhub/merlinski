@@ -674,6 +674,175 @@ class Data_model extends CI_Model
 
 		return $open_normal_vouchers_list;
 	}
+	public function closed_vouchers_list()
+	{
+		$closed_vouchers_list = array(
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'single'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'type'=>'Unlimited'
+			)
+
+
+		);
+
+		return $closed_vouchers_list;
+	}
 }
 
 ?>

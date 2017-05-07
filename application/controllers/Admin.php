@@ -66,6 +66,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->open_normal_vouchers_list();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function closed_vouchers_list()
+	{
+
+		$data['subview'] = 'pages/admin/closed_vouchers_list';
+		$data['title']   = 'Close vouchers';
+		$data['display_data'] = $this->data_model->closed_vouchers_list();
+		$this->load->view('pages/admin/main', $data);
+	}
 
 }
   
