@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b4ad1c-6c78-4dfc-a53b-5de8690eb47a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/inactive_pass_card.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/pages/admin/open_secondary_vouchers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Admin.php" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Data_model.php" afterPath="$PROJECT_DIR$/application/models/Data_model.php" />
@@ -20,24 +20,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="457">
-              <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="38" />
+              <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inactive_pass_card.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/inactive_pass_card.php">
+      <file leaf-file-name="open_secondary_vouchers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/admin/open_secondary_vouchers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-              <folding>
-                <marker date="1494169844772" expanded="true" signature="1484:1491" ph="×" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="40" column="65" lean-forward="false" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,8 +43,8 @@
       <file leaf-file-name="Data_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="853" column="0" lean-forward="false" selection-start-line="853" selection-start-column="0" selection-end-line="853" selection-end-column="0" />
+            <state relative-caret-position="828">
+              <caret line="1192" column="13" lean-forward="false" selection-start-line="1192" selection-start-column="13" selection-end-line="1192" selection-end-column="13" />
               <folding>
                 <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
                 <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
@@ -54,6 +52,7 @@
                 <element signature="n#lostdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
                 <element signature="n#open_normal_vouchers_list#0;n#Data_model#0;n#!!top" expanded="false" />
                 <element signature="e#19998#23984#0#PHP" expanded="false" />
+                <element signature="n#inactive_pass_card#0;n#Data_model#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -95,9 +94,10 @@
         <option value="$PROJECT_DIR$/application/views/pages/admin/main.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/open_normal_vouchers_list.php" />
         <option value="$PROJECT_DIR$/application/views/pages/admin/closed_vouchers_list.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/admin/inactive_pass_card.php" />
         <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
         <option value="$PROJECT_DIR$/application/models/Data_model.php" />
-        <option value="$PROJECT_DIR$/application/views/pages/admin/inactive_pass_card.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/admin/open_secondary_vouchers.php" />
       </list>
     </option>
   </component>
@@ -397,12 +397,12 @@
       <workItem from="1493642229526" duration="1316000" />
       <workItem from="1494071329168" duration="73000" />
       <workItem from="1494086969978" duration="3539000" />
-      <workItem from="1494120347940" duration="22515000" />
+      <workItem from="1494120347940" duration="23205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28316000" />
+    <option name="totallyTimeSpent" value="29006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -448,14 +448,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -708,41 +700,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/closed_vouchers_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/admin/lost_passcard_list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="42" column="92" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="42" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="853" column="0" lean-forward="false" selection-start-line="853" selection-start-column="0" selection-end-line="853" selection-end-column="0" />
-          <folding>
-            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#createdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#lostdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="n#open_normal_vouchers_list#0;n#Data_model#0;n#!!top" expanded="false" />
-            <element signature="e#19998#23984#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="76" column="38" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -752,8 +713,48 @@
         <state relative-caret-position="400">
           <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
-            <marker date="1494169844772" expanded="true" signature="1484:1491" ph="×" />
+            <marker date="1494169925813" expanded="true" signature="1484:1491" ph="×" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/closed_vouchers_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Data_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="1192" column="13" lean-forward="false" selection-start-line="1192" selection-start-column="13" selection-end-line="1192" selection-end-column="13" />
+          <folding>
+            <element signature="n#customersList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#customerDetail#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#createdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#lostdpasscardList#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="n#open_normal_vouchers_list#0;n#Data_model#0;n#!!top" expanded="false" />
+            <element signature="e#19998#23984#0#PHP" expanded="false" />
+            <element signature="n#inactive_pass_card#0;n#Data_model#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/admin/open_secondary_vouchers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="40" column="65" lean-forward="false" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

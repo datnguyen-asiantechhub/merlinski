@@ -74,6 +74,15 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->closed_vouchers_list();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function open_secondary_vouchers()
+	{
+
+		$data['subview'] = 'pages/admin/open_secondary_vouchers';
+		$data['title']   = 'Close vouchers';
+		$data['display_data'] = $this->data_model->open_secondary_vouchers();
+		$this->load->view('pages/admin/main', $data);
+	}
+
 	public function inactive_pass_card()
 	{
 

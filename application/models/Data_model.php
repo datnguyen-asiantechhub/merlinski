@@ -1028,6 +1028,175 @@ class Data_model extends CI_Model
 
 		return $inactive_pass_card;
 	}
+	public function open_secondary_vouchers()
+	{
+		$open_secondary_vouchers = array(
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Robert Kenny'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Albert Ho'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Andrew Lee'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Stephan Young'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Robert Kenny'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Albert Ho'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Andrew Lee'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Stephan Young'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Robert Kenny'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Albert Ho'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Andrew Lee'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Stephan Young'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Robert Kenny'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Albert Ho'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Andrew Lee'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Stephan Young'
+			),
+			array(
+				'voucher'     => 'DS435SDAF',
+				'issue_date' => '20/02/2017',
+				'order' => '32432413412',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Robert Kenny'
+			),
+			array(
+				'voucher'     => 'REWQ23426',
+				'issue_date' => '20/02/2017',
+				'order' => '41234141245',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Albert Ho'
+			),
+			array(
+				'voucher'     => '32D34F2334',
+				'issue_date' => '20/02/2017',
+				'order' => '12343214321',
+				'off_percent'   => '10',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Andrew Lee'
+			),
+			array(
+				'voucher'     => 'DASF3223R',
+				'issue_date' => '20/02/2017',
+				'order' => '78576856745',
+				'off_percent'   => '15',
+				'valid_to'  => '30/04/2018',
+				'customer'=>'Stephan Young'
+			)
+
+
+		);
+
+		return $open_secondary_vouchers;
+	}
 }
 
 ?>
