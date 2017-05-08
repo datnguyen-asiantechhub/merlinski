@@ -1,10 +1,9 @@
-
 <ul class="nav nav-pills nav-stacked">
   <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-  <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
-</li>
-<ul class="sub-menu collapse" id="products">
+  <li data-toggle="collapse" data-target="#products" class="collapsed active">
+  <a href="#"><i class="fa fa-gift fa-lg"></i> Product <span class="arrow"></span></a>
+  </li>
+  <ul class="sub-menu collapse" id="products">
     <li class="active"><a href="#">CSS3 Animation</a></li>
     <li><a href="#">General</a></li>
     <li><a href="#">Buttons</a></li>
@@ -16,7 +15,12 @@
     <li><a href="#">Widgets</a></li>
     <li><a href="#">Bootstrap Model</a></li>
 </ul>
+  <li>Order</li>
+ <li role="presentation" class="active"><a href="#">Customer</a></li>
+  <li>Pass Card</li>
+  <li>Voucher</li>
+  <li>Report</li>
+<li role="presentation" class="active"><a href="#">Configuration</a></li>
   
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
-

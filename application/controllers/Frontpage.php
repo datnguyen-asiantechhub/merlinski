@@ -7,12 +7,12 @@ class Frontpage extends CI_Controller{
    }
    
    public function index(){
-       $data['subview'] = 'pages/frontpage/homepage';
+       $data['subview'] = 'pages/frontpage/Create_new_voucher';
        $data['title'] = 'Frontpage System';
        $this->load->view('pages/frontpage/main',$data);
    }
-   public function homepage(){
-       $data['subview'] = 'pages/frontpage/homepage';
+   public function admin_leftmenu(){
+       $data['subview'] = 'views/templates/admin_leftmenu';
        $data['title'] = 'Frontpage System';
        $this->load->view('pages/frontpage/main',$data);
    }
