@@ -150,7 +150,9 @@ header{
 /*
 *================Main Content============
 */
-main{padding-bottom: 40px;}
+main{
+	padding-bottom: 40px;
+	min-height: 360px;}
 .table-responsive{
 	h1{
 		padding-bottom: 10px;
@@ -161,7 +163,7 @@ main{padding-bottom: 40px;}
 		background-repeat: no-repeat;
 	}
 }
-/*===========-side bar=================*/
+/*===========left-side bar=================*/
 .badge{
 	padding: 5px 5px !important;
 	border-radius: 40px !important;
@@ -188,11 +190,25 @@ main{padding-bottom: 40px;}
 	}
 }
 .sidenav{
+	position: relative;
+	float: left;
+	width: 100%;
 	li{
 		a:hover, a:focus{
 			color: #ffffff;
 			background-color: #7ac142;
 		}
+	}
+}
+.sub-menu{
+	float: none;
+	position: relative;
+	ul{
+		position: absolute;
+		top: 0px;
+		width: 220px;
+		left: 99%;
+		z-index: 1;
 	}
 }
 .right-arrow{float: right !important;}
