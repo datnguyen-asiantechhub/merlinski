@@ -5,7 +5,7 @@
     </div>
 </div>
 <div class="table-responsive">
-    <h1><?php echo $title; ?>/h1>
+    <h1><?php echo $title; ?></h1>
         <table class="table table-striped data-table">
             <thead>
             <tr>

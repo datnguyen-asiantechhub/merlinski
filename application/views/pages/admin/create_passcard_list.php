@@ -6,7 +6,7 @@
 </div>
 
 <div class="table-responsive">
-    <h1><?php echo $title; ?>/h1>
+    <h1><?php echo $title; ?></h1>
 
         <p>Only customers who do not have Pass Card yet appear on this list</p>
         <table class="table table-striped data-table">

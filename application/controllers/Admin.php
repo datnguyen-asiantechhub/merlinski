@@ -107,6 +107,32 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->inactive_pass_card();
 		$this->load->view('pages/admin/main', $data);
 	}
+	/*Function for orders*/
+	public function list_orders_today()
+	{
+
+		$data['subview'] = 'pages/admin/list_orders_today';
+		$data['title']   = 'Orders today';
+		$data['display_data'] = $this->data_model->list_orders_today();
+		$this->load->view('pages/admin/main', $data);
+	}
+	public function list_orders()
+	{
+
+		$data['subview'] = 'pages/admin/list_orders';
+		$data['title']   = 'View all orders';
+		$data['display_data'] = $this->data_model->list_orders();
+		$this->load->view('pages/admin/main', $data);
+	}
+	public function list_orders_cancelled()
+	{
+
+		$data['subview'] = 'pages/admin/list_orders_cancelled';
+		$data['title']   = 'Cancelled orders';
+		$data['display_data'] = $this->data_model->list_orders_cancelled();
+		$this->load->view('pages/admin/main', $data);
+	}
+	/*Function for orders*/
 
 
 }

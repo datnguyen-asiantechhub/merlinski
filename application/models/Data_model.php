@@ -1407,6 +1407,499 @@ class Data_model extends CI_Model
 
 		return $closed_secondary_vouchers;
 	}
+	public function list_orders_today()
+	{
+		$list_orders_today = array(
+			array(
+				'order_no'     => '343154432',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>1800,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '412341234',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>1200,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '654366736',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>500,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '323450243',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>25,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			)
+
+
+
+
+		);
+
+		return $list_orders_today;
+	}
+	public function list_orders()
+	{
+		$list_orders = array(
+			array(
+				'order_no'     => '343154432',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>1800,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '412341234',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>1200,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '654366736',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>500,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '323450243',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>25,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			)
+
+
+
+
+		);
+
+		return $list_orders;
+	}
+	public function list_orders_cancelled()
+	{
+		$list_orders_cancelled = array(
+			array(
+				'order_no'     => '343154432',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'value'=>500,
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '412341234',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>1200,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '654366736',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Mistake',
+				'value'=>500,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '323450243',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>25,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Credit card'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Reschedule',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			),
+			array(
+				'order_no'     => '104354904',
+				'customer' => 'Mr A',
+				'cancel_date'=>'20/05/2017',
+				'reason'=>'Others',
+				'date_time'=>'20/05/2017',
+				'value'=>27,
+				'payment_method'=>'Paypal'
+			)
+
+
+
+
+		);
+
+		return $list_orders_cancelled;
+	}
 }
 
 ?>
