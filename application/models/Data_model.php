@@ -1028,6 +1028,191 @@ class Data_model extends CI_Model
 
 		return $inactive_pass_card;
 	}
+	public function active_pass_card()
+	{
+		$active_pass_card = array(
+			array(
+				'serial'     => '452345664',
+				'customer'     => 'Robert Kenny',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+
+			),
+			array(
+				'serial'     => '098028235',
+				'customer'     => 'Albert Ho',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '453729523',
+				'customer'     => 'Andrew Lee',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '120930845',
+				'customer'     => 'Stephan Young',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '435793255',
+				'customer'     => 'Marc Batra',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'     => 'Robert Kenny',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '098028235',
+				'customer'     => 'Albert Ho',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '453729523',
+				'customer'     => 'Andrew Lee',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '120930845',
+				'customer'     => 'Stephan Young',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '435793255',
+				'customer'     => 'Marc Batra',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'     => 'Robert Kenny',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '098028235',
+				'customer'     => 'Albert Ho',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '453729523',
+				'customer'     => 'Andrew Lee',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '120930845',
+				'customer'     => 'Stephan Young',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '435793255',
+				'customer'     => 'Marc Batra',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'     => 'Robert Kenny',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '098028235',
+				'customer'     => 'Albert Ho',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '453729523',
+				'customer'     => 'Andrew Lee',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '120930845',
+				'customer'     => 'Stephan Young',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '435793255',
+				'customer'     => 'Marc Batra',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '452345664',
+				'customer'     => 'Robert Kenny',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '098028235',
+				'customer'     => 'Albert Ho',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '453729523',
+				'customer'     => 'Andrew Lee',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '120930845',
+				'customer'     => 'Stephan Young',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			),
+			array(
+				'serial'     => '435793255',
+				'customer'     => 'Marc Batra',
+				'issue_date' => '05/02/2017',
+				'last_use' => '15/04/2017',
+
+			)
+
+
+		);
+
+		return $active_pass_card;
+	}
 	public function open_secondary_vouchers()
 	{
 		$open_secondary_vouchers = array(

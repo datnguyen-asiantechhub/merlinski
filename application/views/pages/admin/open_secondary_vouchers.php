@@ -6,6 +6,7 @@
 </div>
 <div class="table-responsive">
     <h1><?php echo $title; ?></h1>
+    <p>Used vouchers are not displayed in this list</p>
         <table class="table table-striped data-table">
             <thead>
             <tr>

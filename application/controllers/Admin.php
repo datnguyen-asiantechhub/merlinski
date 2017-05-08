@@ -49,22 +49,7 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->customerDetail();
 		$this->load->view('pages/admin/main', $data);
 	}
-	public function create_passcard_list()
-	{
 
-		$data['subview'] = 'pages/admin/create_passcard_list';
-		$data['title']   = 'Create Pass Card';
-		$data['display_data'] = $this->data_model->createdpasscardList();
-		$this->load->view('pages/admin/main', $data);
-	}
-	public function lost_passcard_list()
-	{
-
-		$data['subview'] = 'pages/admin/lost_passcard_list';
-		$data['title']   = 'Create Pass Card';
-		$data['display_data'] = $this->data_model->lostdpasscardList();
-		$this->load->view('pages/admin/main', $data);
-	}
 	/*Function for vouchers*/
 	public function open_normal_vouchers_list()
 	{
@@ -90,6 +75,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->open_secondary_vouchers();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function create_voucher()
+	{
+
+		$data['subview'] = 'pages/admin/create_voucher';
+		$data['title']   = 'Create new voucher';
+
+		$this->load->view('pages/admin/main', $data);
+	}
 	public function closed_secondary_vouchers()
 	{
 
@@ -99,12 +92,36 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 	/*Function for vouchers*/
+	public function create_passcard_list()
+	{
+
+		$data['subview'] = 'pages/admin/create_passcard_list';
+		$data['title']   = 'Create Pass Card';
+		$data['display_data'] = $this->data_model->createdpasscardList();
+		$this->load->view('pages/admin/main', $data);
+	}
+	public function lost_passcard_list()
+	{
+
+		$data['subview'] = 'pages/admin/lost_passcard_list';
+		$data['title']   = 'Lost Pass Cards';
+		$data['display_data'] = $this->data_model->lostdpasscardList();
+		$this->load->view('pages/admin/main', $data);
+	}
 	public function inactive_pass_card()
 	{
 
 		$data['subview'] = 'pages/admin/inactive_pass_card';
 		$data['title']   = 'Inactive Pass Cards';
 		$data['display_data'] = $this->data_model->inactive_pass_card();
+		$this->load->view('pages/admin/main', $data);
+	}
+	public function active_pass_card()
+	{
+
+		$data['subview'] = 'pages/admin/active_pass_card';
+		$data['title']   = 'Inactive Pass Cards';
+		$data['display_data'] = $this->data_model->active_pass_card();
 		$this->load->view('pages/admin/main', $data);
 	}
 	/*Function for orders*/
