@@ -25,6 +25,14 @@ class Admin extends CI_Controller
 		$data['title']   = 'Admin System';
 		$this->load->view('pages/admin/main', $data);
 	}
+
+	public function customer()
+	{
+		$data['subview'] = 'pages/admin/customer';
+		$data['title']   = 'Admin System';
+		$this->load->view('pages/admin/main', $data);
+	}
+
 	public function customers_list()
 	{
 

@@ -11,37 +11,29 @@
     <!-- Latest compiled and minified JavaScript -->
     <link href='https://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-   
+   <link href="https://fonts.googleapis.com/css?family=Century+Gothic" rel="stylesheet">
     <meta content="text/html" charset="utf-8" />   
     <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/styles.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/select2.min.css"/>
 </head>
 <header>
 <?php $this->load->view('sasscompile/build'); ?>
-<div class="container">
-    <div class="row">
-        
-        <div id="logo" class="col-sm-3">
-            <img src="<?php echo base_url();?>application/views/assets/images/logo.jpg" />
-        </div>
-        <div class="col-sm-9 pull-right">
-            <p>Welcome Administrator</p>
-        </div>   
-    </div>
-</div>
+<?php $this->load->view('templates/header');?>
 </header>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <?php $this->load->view('templates/admin_leftmenu');?>
-        </div>
-        <div class="col-sm-9">
-            <?php $this->load->view($subview);?>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sx-12 col-sm-3 col-md-3">
+                <?php $this->load->view('templates/admin_leftmenu');?>
+            </div>
+            <div class="col-sx-12 col-sm-9 col-md-9">
+                <?php $this->load->view($subview);?>
+            </div>
         </div>
     </div>
-</div>
+</main>
 <footer>
-    <p>Copyright © 2017 FallsCreek. All rights reserved.</p>
+    <?php $this->load->view('templates/footer');?>
 </footer>
 <body>
     
