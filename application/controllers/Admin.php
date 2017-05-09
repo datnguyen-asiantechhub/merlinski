@@ -1,6 +1,5 @@
 
 <?php
-
 class Admin extends CI_Controller
 {
 	public function __construct()
@@ -17,6 +16,16 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 
+  public function Create(){
+      $data['subview'] = 'pages/admin/create_new_voucher';
+      $data['title'] = 'Admin System';
+      $this->load->view('pages/admin/main',$data);
+  }
+  public function content(){
+      $data['subview'] = 'pages/admin/main_content';
+      $data['title'] = 'Admin System';
+      $this->load->view('pages/admin/main',$data);
+  }
 
 	public function login()
 	{
@@ -158,13 +167,5 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 	/*Function for orders*/
-
-
 }
-  
-
-
-
 ?>
-
-
