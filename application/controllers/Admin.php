@@ -83,6 +83,14 @@ class Admin extends CI_Controller
 
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function create_new_product()
+	{
+
+		$data['subview'] = 'pages/admin/create_new_product';
+		$data['title']   = 'Create new product';
+
+		$this->load->view('pages/admin/main', $data);
+	}
 	public function closed_secondary_vouchers()
 	{
 

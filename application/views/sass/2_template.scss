@@ -154,7 +154,7 @@ main{
 	padding-bottom: 40px;
 	min-height: 360px;}
 .table-responsive{
-	h1{
+	h1, h3{
 		padding-bottom: 10px;
 		margin-bottom: 20px;
 		background-position: left bottom;
@@ -348,9 +348,63 @@ main{
 	height: 45px;
 }
 
-/*================My Account==================*/
+/*=============Create New Product=============*/
+.new-product{
+	width: 675px;
+}
+.tabs-panel{
+	border-bottom: solid 4px #f0f0f0;
+	padding-right: 10px;
+	padding-left: 10px;
+	max-width: 600px;
+	.active{
+		a{
+			padding-left: 30px;
+			padding-right: 30px;
+			color: #ffffff !important;
+			background-color: #7ac142 !important;
+			border:none !important;
+		}
+	}
+	li{
+		a{
+			background-color: #4e525b;
+			color: #ffffff;
+			border:none;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		a:hover{
+			background-color: #7ac142;
+			border:none;
+		}
+	}
+}
+.input-basic-table{
+	th, td{
+		border: none !important;
+	}
+	th{
+		padding-left: 55px !important;
+		vertical-align: middle !important;
+		width: 195px;
+		font-weight: normal;
+	}
+	input{
+		height: 45px;
+	}
+	.base-price{
+		width: 150px;
+		display: inline;
+	}
+	input[type=submit]{
+		width: 130px;
+		font-size: 19px;
+	}
+}
 
 /*----------------End of Compoment-------------*/
+
 /*
 *=================Footer===============
 */
