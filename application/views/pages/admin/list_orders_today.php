@@ -10,35 +10,27 @@
             <thead>
             <tr>
                 <th>No.</th>
-                <th>Voucher</th>
-                <th>Issued date</th>
-                <th>Order</th>
-                <th>Off percentage</th>
-                <th>Use ?</th>
-                <th>Use on</th>
+                <th>Order No</th>
                 <th>Customer</th>
+                <th>Date time</th>
+                <th>Value</th>
+                <th>Payment method</th>
+                <th></th>
+                <th></th>
 
             </tr>
             </thead>
             <tbody>
 
-			<?php foreach ($display_data as $key => $closed_secondary_vouchers): ?>
+			<?php foreach ($display_data as $key => $list_orders_today): ?>
 				<?php echo '<tr>'; ?>
                 <td><?php echo $key + 1; ?></td>
-                <td><?php echo $closed_secondary_vouchers['voucher']; ?></td>
-                <td><?php echo $closed_secondary_vouchers['issue_date']; ?></td>
-                <td><?php echo $closed_secondary_vouchers['order']; ?></td>
-                <td><?php echo $closed_secondary_vouchers['off_percent']; ?></td>
-                <td><?php if ($closed_secondary_vouchers['use'] == 1)
-					{
-						echo 'Yes';
-					}
-					else
-					{
-						echo 'No';
-					} ?></td>
-                <td><?php echo $closed_secondary_vouchers['used_on']; ?></td>
-                <td><?php echo $closed_secondary_vouchers['customer']; ?></td>
+                <td><?php echo $list_orders_today['order_no']; ?></td>
+                <td><?php echo $list_orders_today['customer']; ?></td>
+                <td><?php echo $list_orders_today['date_time']; ?></td>
+                <td><?php echo $list_orders_today['value']; ?></td>
+                <td><?php echo $list_orders_today['payment_method']; ?></td>
+                <td><a class="detail" href="<?php echo base_url(); ?>admin/customer_detail"><span></span></a></td>
 				<?php echo '</tr>'; ?>
 			<?php endforeach; ?>
 
