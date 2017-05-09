@@ -265,6 +265,7 @@ main{padding-bottom: 40px;}
 	}
 }
 .data-search{
+	position: relative;
 	float: right;
 	max-width: 190px;
 	height: 40px;
@@ -276,8 +277,8 @@ main{padding-bottom: 40px;}
 }
 .search-data{
 	@extend .search-button;
-	top: 9%;
-  right: 3%;
+	top: 10px;
+  right: 10px;
   width: 21px;
   height: 20px;
 }
