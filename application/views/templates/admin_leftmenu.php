@@ -1,26 +1,25 @@
-<ul class="nav nav-pills nav-stacked">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li data-toggle="collapse" data-target="#products" class="collapsed active">
-  <a href="#"><i class="fa fa-gift fa-lg"></i> Product <span class="arrow"></span></a>
-  </li>
-  <ul class="sub-menu collapse" id="products">
-    <li class="active"><a href="#">CSS3 Animation</a></li>
-    <li><a href="#">General</a></li>
-    <li><a href="#">Buttons</a></li>
-    <li><a href="#">Tabs & Accordions</a></li>
-    <li><a href="#">Typography</a></li>
-    <li><a href="#">FontAwesome</a></li>
-    <li><a href="#">Slider</a></li>
-    <li><a href="#">Panels</a></li>
-    <li><a href="#">Widgets</a></li>
-    <li><a href="#">Bootstrap Model</a></li>
-</ul>
-  <li>Order</li>
- <li role="presentation" class="active"><a href="#">Customer</a></li>
-  <li>Pass Card</li>
-  <li>Voucher</li>
-  <li>Report</li>
-<li role="presentation" class="active"><a href="#">Configuration</a></li>
-  
-  <li role="presentation"><a href="#">Messages</a></li>
-</ul>
+<div class="menu-left">
+	<ul class="nav nav-pills nav-stacked sidenavv">
+		<li><a href="">Home</a></li>
+		<li>
+			<a data-toggle="collapse" data-target="#products" href="#"> Product <span class="glyphicon glyphicon-chevron-right right-arrowa"></span></a>
+			<ul class="nav nav-stacked collapse" id="products">
+			    <li><a href="#">Select1</a></li>
+			    <li><a href="#">Select2</a></li>
+			    
+			</ul>
+		</li>
+		<li>
+			<a data-toggle="collapse" data-target="#Order" href="#"> Order <span class="badgee">33</span> <span class="glyphicon glyphicon-chevron-right right-arrowa"></span></a>
+			<ul class="nav nav-stacked collapse" id="Order">
+			    <li><a href="#">Select1</a></li>
+			    <li><a href="#">Select2</a></li>
+			</ul>
+		</li>
+		<li><a href="">Customer</a></li>
+		<li><a href="">Pass Card</a></li>
+		<li><a href="">Voucher</a></li>
+		<li><a href="">Report</a></li>
+		<li><a href="">Configuration</a></li>
+	</ul>
+</div>
