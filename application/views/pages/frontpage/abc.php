@@ -1,1 +1,0 @@
-<?php echo 'Good luck for me';?>

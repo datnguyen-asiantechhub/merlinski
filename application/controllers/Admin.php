@@ -16,6 +16,16 @@ class Admin extends CI_Controller{
       $data['title'] = 'Admin System';
       $this->load->view('pages/admin/main',$data);
   }
+  public function Create(){
+      $data['subview'] = 'pages/admin/Create_new_voucher';
+      $data['title'] = 'Admin System';
+      $this->load->view('pages/admin/main',$data);
+  }
+  public function content(){
+      $data['subview'] = 'pages/admin/Main_content';
+      $data['title'] = 'Admin System';
+      $this->load->view('pages/admin/main',$data);
+  }
 }
 ?>
 
