@@ -98,7 +98,7 @@
         <h3>Family members</h3>
         <div class="table-responsive">
             <table class="table">
-                <table class="table">
+                <table class="table data-table">
                     <thead>
                     <tr>
                         <th>No.</th>
@@ -125,7 +125,7 @@
                         <td><?php echo $family_members['city']; ?></td>
                         <td><?php echo $family_members['address']; ?></td>
                         <td><?php echo $family_members['phone']; ?></td>
-                        <td><a href="<?php echo base_url(); ?>admin/customer_detail">icon go to detail</a></td>
+                        <td><a class="detail" href="<?php echo base_url(); ?>admin/customer_detail"><span></span></a></td>
 						<?php echo '</tr>'; ?>
 					<?php endforeach; ?>
 
@@ -162,5 +162,28 @@
                 </table>
             </table>
         </div>
+        <nav>
+        <ul class="page-direction">
+            <li><a id="prev" href="#"><span class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a>
+            </li>
+            <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+        </ul>
+        <div class="pagin">
+            <label>Page</label>
+            <select class="selectpicker" id="pagination-page">
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <label> of </label>
+            <span id="total-page"> 7 </span>
+        </div>
+
+
+    </nav>
     </div>
+
 </div>
