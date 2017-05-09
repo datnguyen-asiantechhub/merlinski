@@ -40,3 +40,5 @@
 		<li><a href="">Configuration</a></li>
 	</ul>
 </div>
+
+</div>
