@@ -46,7 +46,7 @@
         </ul>
         <div class="pagin">
             <label>Page</label>
-            <select class="selectpicker" id="pagination-page">
+            <select id="pagination-page">
                 <option value="1">1</option>
                 <option value="2">3</option>
                 <option value="3">3</option>
