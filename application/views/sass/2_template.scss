@@ -154,7 +154,7 @@ main{
 	padding-bottom: 40px;
 	min-height: 360px;}
 .table-responsive{
-	h1, h3{
+	@mixin h1{
 		padding-bottom: 10px;
 		margin-bottom: 20px;
 		background-position: left bottom;
@@ -349,14 +349,42 @@ main{
 }
 
 /*=============Create New Product=============*/
+.create-btn{
+	width: 130px;
+	font-size: 19px;
+}
 .new-product{
 	width: 675px;
+	h3{@include h1;}
+	table{
+		th, td{
+		border: none !important;
+		font-weight: normal;
+		}
+		.short-input{
+			width: 150px;
+			display: inline;
+		}
+		td{
+			position: relative;
+			input[type=text], input[type=submit]{
+				height: 45px;
+			}
+		}
+		.row-name{
+			border-bottom: 1px dashed #dddddd !important;
+			.radio-inline{
+				padding-left: 0px;
+			}
+		}
+	}
 }
 .tabs-panel{
 	border-bottom: solid 4px #f0f0f0;
 	padding-right: 10px;
 	padding-left: 10px;
 	max-width: 600px;
+	margin-bottom: 12px;
 	.active{
 		a{
 			padding-left: 30px;
@@ -381,26 +409,128 @@ main{
 	}
 }
 .input-basic-table{
-	th, td{
-		border: none !important;
-	}
 	th{
 		padding-left: 55px !important;
 		vertical-align: middle !important;
 		width: 195px;
+	}
+}
+.input-advance-table{
+	max-width: 480px;
+	margin: auto;
+	label{
+		margin: 0px;
+		display: inline-block;
 		font-weight: normal;
+		padding-left: 25px;
 	}
-	input{
-		height: 45px;
-	}
-	.base-price{
+}
+.input-file-table{
+	max-width:595px;
+	.thumbnail{
+		position: relative;
+		float: right;
+		margin-left: 35px;
+		padding: 0px !important;
 		width: 150px;
-		display: inline;
+		height: 150px;
+		border: 3px solid #eaeaea;		
+		img {
+			width: 100%;
+		}
+		span{
+			position: absolute;
+			top:52px;
+			left:52px;
+			display: block;
+			height: 40px;
+			width: 40px;
+			opacity: 1 !important;
+			background-image:url(../../assets/images/play-icon.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: 2;
+		}
 	}
-	input[type=submit]{
-		width: 130px;
-		font-size: 19px;
+	.create-btn{
+			margin-left: 44.5%;
 	}
+	.video-mask{
+		position: absolute;
+		width: 100%;
+		height:100%;
+		background-color: #000000;
+		opacity: 0.2;
+		z-index: 1;
+	}
+}
+.add-table{
+	span{
+		margin-right: 5px;
+		height: 18px;
+		width: 18px !important;
+		display: block;
+		background-image: url(../../assets/images/add-subtr-icon.png) !important;
+		background-position: right;
+		cursor: pointer;
+	}
+}
+.subtract-table{
+	span{
+		margin-right: 5px;
+		height: 18px;
+		width: 18px !important;
+		display: block;
+		background-image: url(../../assets/images/add-subtr-icon.png)!important;
+		background-position: left;
+		cursor: pointer;
+	}
+}
+.extra-table{
+	.create-btn{
+			margin-left: 39%;
+	}
+}
+/*==============Style datepicker==============*/
+
+.prev, .next, .datepicker-switch{
+	border-radius: 0px !important;
+}
+.datepicker thead tr:first-child{
+	background-color: #7ac142;
+}
+.datepicker thead tr:first-child th:hover{
+	background-color: #7ac142;
+}
+.datepicker table tr td{
+	border-radius: 100% !important;
+	font-size: 10px;
+}
+.dow{
+	font-size: 10px;
+}
+/*==============Radio button style============*/
+input[type=radio]{
+	-webkit-appearance: none;
+	content: attr(data-tooltip);
+	background-color: #ffffff;
+	margin-left: 0px !important;
+	margin-top: 2px;
+	height: 18px;
+	width:18px;
+	border-radius: 100%;
+	border: 2px solid #7f7f7f;	
+}
+input[type='radio']:checked{
+	content: '';
+	color: #000000;
+}
+input[type='radio']:after{
+	color: #000000;
+	content: '✓';
+	position: absolute;
+  top: -4px;
+  left: 2px;
 }
 
 /*----------------End of Compoment-------------*/

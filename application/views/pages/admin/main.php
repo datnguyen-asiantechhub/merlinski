@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url();?>application/libraries/bootstrap/css/bootstrap.min.css" />
     <!-- Optional theme -->
     <link rel="stylesheet" href="<?php echo base_url();?>application/libraries/bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url();?>application/libraries/bootstrap/css/datepicker.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url();?>application/libraries/bootstrap/css/datepicker3.min.css" />
     <!-- Latest compiled and minified JavaScript -->
     <link href='https://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -36,10 +38,11 @@
     <?php $this->load->view('templates/footer');?>
 </footer>
 <body>
-    
+
 </body>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/select2/select2.full.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/bootstrap-datepicker.min.js"></script>
 </html>
