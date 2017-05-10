@@ -15,10 +15,11 @@
 			    <li><a href="#">Menu1</a></li>
 			    <li><a href="#">Menu2</a></li>
 
+
 <div class="menu-left">
 	<ul class="nav nav-pills nav-stacked sidenavv">
 		<li><a href="">Home</a></li>
-		<li>
+		<li class="sub-menu">
 			<a data-toggle="collapse" data-target="#products" href="#"> Product <span class="glyphicon glyphicon-chevron-right right-arrowa"></span></a>
 			<ul class="nav nav-stacked collapse" id="products">
 			    <li><a href="#">Select1</a></li>
@@ -26,7 +27,7 @@
 			    
 			</ul>
 		</li>
-		<li>
+		<li class="sub-menu">
 			<a data-toggle="collapse" data-target="#Order" href="#"> Order <span class="badgee">33</span> <span class="glyphicon glyphicon-chevron-right right-arrowa"></span></a>
 			<ul class="nav nav-stacked collapse" id="Order">
 			    <li><a href="#">Select1</a></li>

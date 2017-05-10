@@ -5,7 +5,7 @@
 			<img src="<?php echo base_url();?>application/views/assets/images/underline_03.png" alt="" id="" />
 		</div>
 		<div class="row">
-			<div class="col-sm-2">
+			<div class="col-md-2">
 					<div class="voucher">
 					<h4>Code</h4>
 						
@@ -20,14 +20,13 @@
 					</div>
 					<div class="voucher">
 					<h4>Description</h4>
-							
 					</div>
 					<div class="voucher">
 					<h4>Use times</h4>
 						
 					</div>
 			</div>
-			<div class="col-sm-10">
+			<div class="col-md-10">
 					<form>
 						<div>
 							<label class="checkbox-inline">
@@ -59,7 +58,7 @@
 							    </label>
 							    <label class="radio-inline">
 							      <input type="radio" name="optradio"> Unlimited
-							    </label>
+							    </label>	
 							</form>
 							
 						</div>

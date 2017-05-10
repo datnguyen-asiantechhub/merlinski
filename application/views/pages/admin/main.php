@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sx-12 col-sm-3 col-md-3">
-                <?php $this->load->view('templates/admin_leftmenu');?>
+                <?php $this->load->view('templates/admin_menuleft');?>
             </div>
             <div class="col-sx-12 col-sm-9 col-md-9">
                 <?php $this->load->view($subview);?>
