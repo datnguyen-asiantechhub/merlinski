@@ -424,6 +424,7 @@ main{
 		font-weight: normal;
 		padding-left: 25px;
 	}
+	.single{float: right;}
 }
 .input-file-table{
 	max-width:595px;
@@ -452,8 +453,13 @@ main{
 			z-index: 2;
 		}
 	}
+	.select-title{
+		font-size: 19px;
+	  position: relative;
+	  top: 6px;
+	}
 	.create-btn{
-			margin-left: 44.5%;
+		margin-left: 44.5%;
 	}
 	.video-mask{
 		position: absolute;
@@ -522,15 +528,33 @@ input[type=radio]{
 	border: 2px solid #7f7f7f;	
 }
 input[type='radio']:checked{
-	content: '';
-	color: #000000;
+	background-image: url(../../assets/images/checked.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
-input[type='radio']:after{
-	color: #000000;
-	content: '✓';
-	position: absolute;
-  top: -4px;
-  left: 2px;
+
+/*==============Style File input===============*/
+.select-file{
+	max-width: 500px;
+	float: right;
+	input[type=text]{
+		height: 45px !important;
+	}
+	span{
+		height: 45px;
+		line-height: 2;
+	}
+	.filePath{
+	  position: absolute;
+	  right: 0px;
+	  top: 0px;
+	  opacity: 0;
+	  height: 45px;
+	  width: 100px;
+	  font-size: 30px;
+	  cursor: pointer;
+	}
 }
 
 /*----------------End of Compoment-------------*/

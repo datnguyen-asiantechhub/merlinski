@@ -40,8 +40,8 @@
 					<tr class="row-name">
 						<th>Name</th>
 						<td>
-							<div class="radio-inline"> <input class="radio-inline" id="open" type="radio" name="name"><label>Open</label></div>
-							<div class="radio-inline"> <input id="single" type="radio" name="name"><label>Single</label></div>
+							<div class="radio-inline"> <input type="radio" name="name"><label>Open</label></div>
+							<div class="radio-inline single"><label>Single</label></div>
 
 						</td>
 					</tr>
@@ -90,10 +90,13 @@
 				<table class="table input-file-table">
 					<tr>
 						<td>
-							<div>
-								<label for="fileSelect"></label>
-								<input type="file" id="fileSelect" name="fileSelect">
-							</div>
+							<span class="select-title">Image</span>
+							<div class="input-group select-file">
+					      <input type="text" class="form-control">
+					      <a class="input-group-btn">
+					        <span class="btn btn-warning" type="button"><input type="file" id="imageFile" class="filePath" name="imageFile">Select File</span>
+					      </a>
+					    </div>
 						</td>
 					</tr>
 					<tr>
@@ -105,10 +108,13 @@
 					</tr>
 					<tr>
 						<td>
-							<div>
-								<label for="fileSelect"></label>
-								<input type="file" id="fileSelect" name="fileSelect">
-							</div>
+							<span class="select-title">Video</span>
+							<div class="input-group select-file">
+					      <input type="text" class="form-control">
+					      <a class="input-group-btn">
+					        <span class="btn btn-warning" type="button"><input type="file" id="videoFile" class="filePath" name="videoFile">Select File</span>
+					      </a>
+					    </div>
 						</td>
 					</tr>
 					<tr>
