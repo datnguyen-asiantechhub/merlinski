@@ -199,43 +199,21 @@ table.day td.appoint {
 	border-bottom: 2px solid #99ccff;
 }
 /*------end calendar---------*/
-/*-------side bar-----------*/
-.badgee{
-	padding: 5px 5px !important;
-	border-radius: 40px !important;
-	color: #000000;
-	background-color: #fcff00;
-}
-.menu-left{
-	margin-top:20px;
-	ul{
-		li{
-			margin-top: 0px;
-			a{
-				padding-top: 14px;
-				padding-bottom: 14px;
-				padding-left :10px;
-				color: #ffffff;
-				background-color: #7ac142;
-				border-radius: 0px;
-				background-image: url(../../assets/images/bg-left-side_03.png);
-				background-position: bottom;
-				background-repeat: repeat-x;
-			}
-		}
-	}
-}
-.sidenavv{
-	li{
-		a:hover, a:focus{
-			color: #ffffff;
-			background-color: #7ac142;
-		}
-	}
-}
-.right-arrowa{float: right !important;}
-/*----------Style Table---------*/
 
+/*----------table---------*/
+.border{
+	border: hidden;
+
+}
+td.font{
+	font-style: italic;
+	font-size: 17px;
+	padding-left: 5px;
+}
+td.style{
+	font-style: normal;
+	font-size: 17px;
+}
 
 
 
