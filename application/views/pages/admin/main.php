@@ -41,5 +41,8 @@
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/select2/select2.full.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/canvasjs.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
 </html>
