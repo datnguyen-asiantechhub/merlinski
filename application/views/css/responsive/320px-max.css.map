@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAwB;EACvB,MAAM;IACN,UAAU,EAAE,OAAO",
+"sources": ["../../sass/responsive/320px-max.scss"],
+"names": [],
+"file": "320px-max.css"
+}
