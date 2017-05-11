@@ -4,9 +4,6 @@
 header{
 	background: none !important;
 }
-.table-responsive{
-	overflow: visible;
-}
 /*
 *=========Header=========
 */
@@ -401,6 +398,11 @@ main{
 		width: 130px;
 		font-size: 19px;
 	}
+}
+
+/*================Access Report================*/
+.filtered-data{
+	padding-top:40px;
 }
 
 /*----------------End of Compoment-------------*/
