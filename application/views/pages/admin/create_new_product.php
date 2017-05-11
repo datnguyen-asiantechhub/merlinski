@@ -85,6 +85,76 @@
 				</table>
 			</form>
 		</div>
+		<div class="tab-pane" id="pricing">
+			<form method="POST" action="">
+				<table class="table input-pricing-table">
+					<tr>
+						<th><span>Time</span></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th class="season-seat">Spring</th>
+						<td>
+							<div id="spring"></div>
+							<input class="text-center" type="text" id="spring-percent" name="spring" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th  class="season-seat">Summer</th>
+						<td>
+							<div id="summer"></div>
+							<input class="text-center" type="text" id="summer-percent" name="summer" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th class="season-seat">Autumn</th>
+						<td>
+							<div id="autumn"></div>
+							<input class="text-center" type="text" id="autumn-percent" name="autumn" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th class="season-seat">Winter</th>
+						<td>
+							<div id="winter"></div>
+							<input class="text-center" type="text" id="winter-percent" name="winter" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th><span>Remaining seat</span></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th class="season-seat">Under 25%</th>
+						<td>
+							<div id="low"></div>
+							<input class="text-center" type="text" id="low-percent" name="low" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th class="season-seat">From 25% to 50%</th>
+						<td>
+							<div id="middle"></div>
+							<input class="text-center" type="text" id="middle-percent" name="middle" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th class="season-seat">From 50% to 75%</th>
+						<td>
+							<div id="high"></div>
+							<input class="text-center" type="text" id="high-percent" name="high" readonly>
+						</td>
+					</tr>
+					<tr>
+						<th class="season-seat">From 75% to 100%</th>
+						<td>
+							<div id="max"></div>
+							<input class="text-center" type="text" id="max-percent" name="max" readonly>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
 		<div class="tab-pane" id="media">
 			<form method="POST" action="">
 				<table class="table input-file-table">
@@ -92,7 +162,7 @@
 						<td>
 							<span class="select-title">Image</span>
 							<div class="input-group select-file">
-					      <input type="text" class="form-control">
+					      <input type="text" class="form-control" readonly>
 					      <a class="input-group-btn">
 					        <span class="btn btn-warning" type="button"><input type="file" id="imageFile" class="filePath" name="imageFile">Select File</span>
 					      </a>
@@ -110,7 +180,7 @@
 						<td>
 							<span class="select-title">Video</span>
 							<div class="input-group select-file">
-					      <input type="text" class="form-control">
+					      <input type="text" class="form-control" readonly>
 					      <a class="input-group-btn">
 					        <span class="btn btn-warning" type="button"><input type="file" id="videoFile" class="filePath" name="videoFile">Select File</span>
 					      </a>
