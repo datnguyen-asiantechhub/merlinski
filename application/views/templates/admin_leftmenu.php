@@ -1,4 +1,4 @@
-<div class="left-side">
+<div class="left-side menu-style">
     <ul class="nav nav-pills nav-stacked sidenav">
         <li><a href="">Home</a> </li>
         <li class="sub-menu">
@@ -9,9 +9,9 @@
             </ul>
         </li>
         <li class="sub-menu">
-            <a data-toggle="collapse" data-target="#Order" href="#"> Order <span class="badge">33</span> <span class="glyphicon glyphicon-chevron-right right-arrow"></span></a>
+            <a data-toggle="collapse" data-target="#Order" href="#"> Order <span class="badge badge-style" >33</span> <span class="glyphicon glyphicon-chevron-right right-arrow"></span></a>
             <ul class="nav nav-stacked collapse" id="Order">
-                <li><a href="#">Select1</a></li>
+                <li><a href="#">Select1</a></li>    
                 <li><a href="#">Select2</a></li>
             </ul>
         </li>

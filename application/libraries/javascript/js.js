@@ -1,6 +1,14 @@
 jQuery(document).ready(function($) {
     $('select').select2();
+
+    $('#form_datetime').datepicker({
+       format: 'dd/mm/yyyy'
+   }).on('changeDate', function() {
+     $('#useTime').val($('#datepicker').datepicker('getFormattedDate'));
+ });
+
     
+
     window.onload = function () {
     var chart = new CanvasJS.Chart("piechart",
     {
@@ -26,7 +34,7 @@ jQuery(document).ready(function($) {
             indexLabelPlacement: "inside", 
             toolTipContent: "{name}: {y}hrs",
             showInLegend: true,
-            indexLabel: "#percent%", 
+            indexLabel: "#percent%",    
             dataPoints: [
                 {  y: 52, name: "Time At Work", legendMarkerType: "triangle"},
                 {  y: 44, name: "Time At Home", legendMarkerType: "square"},
@@ -37,5 +45,6 @@ jQuery(document).ready(function($) {
     });
     chart.render();
 };
-
 });
+
+
