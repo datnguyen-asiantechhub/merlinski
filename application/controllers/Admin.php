@@ -149,18 +149,18 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->list_orders_today();
 		$this->load->view('pages/admin/main', $data);
 	}
-	public function list_orders()
+	public function view_all_order()
 	{
 
-		$data['subview'] = 'pages/admin/list_orders';
+		$data['subview'] = 'pages/admin/view_all_order';
 		$data['title']   = 'View all orders';
 		$data['display_data'] = $this->data_model->list_orders();
 		$this->load->view('pages/admin/main', $data);
 	}
-	public function list_orders_cancelled()
+	public function cancelled_order()
 	{
 
-		$data['subview'] = 'pages/admin/list_orders_cancelled';
+		$data['subview'] = 'pages/admin/cancelled_order';
 		$data['title']   = 'Cancelled orders';
 		$data['display_data'] = $this->data_model->list_orders_cancelled();
 		$this->load->view('pages/admin/main', $data);

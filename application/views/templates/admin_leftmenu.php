@@ -11,8 +11,9 @@
         <li class="sub-menu">
             <a data-toggle="collapse" data-target="#Order" href="#"> Order <span class="badge badge-style" >33</span> <span class="glyphicon glyphicon-chevron-right right-arrow"></span></a>
             <ul class="nav nav-stacked collapse" id="Order">
-                <li><a href="#">Select1</a></li>    
-                <li><a href="#">Select2</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/list_orders_today">Orders today</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/view_all_order">View all</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/cancelled_order">Cancelled vouchers</a></li>
             </ul>
         </li>
         <li><a href="<?php echo base_url().index_page();?>/admin/customer">Customer</a></li>
