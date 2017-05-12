@@ -8,7 +8,24 @@
 		<p>COMPARED TO LAST MONTH</p>
 	</div>
 	<div class="chart-group">
-		
+		<div class="form-inline select-chart">
+			<h5 class="chart-title">TOP VISITED ATTRACTIONS</h5>
+			<a class="btn btn-default" data-toggle="tab" href="#colume-chart">Chart</a>
+			<a class="btn btn-default" data-toggle="tab" href="#line-chart">Line</a>
+			<a class="btn btn-default" data-toggle="tab" href="#pie-chart">Pie</a>
+		</div>
+		<div class="tab-content">
+			<div class="tab-pane active" id="colume-chart">
+				<div id="col_chart"></div>
+			</div>
+			<div class="tab-pane" id="line-chart">
+				<div id="line_chart"></div>
+			</div>
+			<div class="tab-pane" id="pie-chart">
+				<div id="pie_chart"></div>
+				
+			</div>
+		</div>
 	</div>
 </div>
 <div class="filter">

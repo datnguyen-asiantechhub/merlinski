@@ -83,13 +83,17 @@ header{
 }
 .voucher{
 	margin-right: 0px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .voucher_1{
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
+}
+.form-inline{
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 /*---------calendar---------*/
 * {
@@ -137,7 +141,6 @@ html {
 .hole-right {
 	right: 8px;
 }
-
 #calendar {
 	background: #e4e0e7;
 	box-shadow: 0 0 20px #878787;
@@ -214,7 +217,23 @@ td.style{
 	font-style: normal;
 	font-size: 17px;
 }
-
+/*--------form-control--------*/
+.form-control{
+	width: 60%;
+}
+/*--------end control----------*/
+.badge-style{
+	margin-left: 40px !important;
+}
+.menu-style{
+	ul{
+		li{
+			a{
+				padding-left: 20px !important;
+			}
+		}
+	}
+}
 
 
 
