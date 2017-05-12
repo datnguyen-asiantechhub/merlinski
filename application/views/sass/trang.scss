@@ -29,7 +29,7 @@ table{
 	}
 }
 .page-direction{
-	width: 62px;
+	max-width: 62px;
 }
 .pagin{
 	padding-right: 10px;
@@ -39,5 +39,8 @@ table{
 	}
 	.select2.select2-container.select2-container--default{
 		margin-top: -3px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow{
+		right: 8px;
 	}
 }
