@@ -14,6 +14,7 @@
    <link href="https://fonts.googleapis.com/css?family=Century+Gothic" rel="stylesheet">
     <meta content="text/html" charset="utf-8" />   
     <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/styles.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/chartist.min.css"/>
     <link rel="stylesheet" href="<?php echo base_url();?>application/views/assets/css/select2.min.css"/>
 </head>
 <header>
@@ -43,6 +44,7 @@
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/select2/select2.full.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/canvasjs.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/chartist.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
 </html>

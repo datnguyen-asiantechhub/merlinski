@@ -1,41 +1,92 @@
 jQuery(document).ready(function($) {
     $('select').select2();
     
-    window.onload = function () {
-    var chart = new CanvasJS.Chart("piechart",
-    {
-        title:{
-            text: "How my time is spent in a week?",
-            fontFamily: "arial black"
-        },
-                animationEnabled: true,
-        legend: {
-            verticalAlign: "bottom",
-            horizontalAlign: "center"
-        },
-        theme: "theme1",
-        data: [
-        {        
-            type: "pie",
-            indexLabelFontFamily: "Garamond",       
-            indexLabelFontSize: 20,
-            indexLabelFontWeight: "bold",
-            startAngle:0,
-            indexLabelFontColor: "MistyRose",       
-            indexLabelLineColor: "darkgrey", 
-            indexLabelPlacement: "inside", 
-            toolTipContent: "{name}: {y}hrs",
-            showInLegend: true,
-            indexLabel: "#percent%", 
-            dataPoints: [
-                {  y: 52, name: "Time At Work", legendMarkerType: "triangle"},
-                {  y: 44, name: "Time At Home", legendMarkerType: "square"},
-                {  y: 12, name: "Time Spent Out", legendMarkerType: "circle"}
-            ]
-        }
-        ]
+   /* var data = {
+      series: [5, 3, 4]
+    };*/
+
+    var sum = function(a, b) { return a + b };
+
+    
+    new Chartist.Pie('.ct-chart', {
+      series: [{
+        value: 12,
+        name: 'Series 1',
+        className: 'bg-chart-1',
+        meta: 'Meta One'
+      }, {
+        value: 17,
+        name: 'Series 2',
+        className: 'bg-chart-2',
+        meta: 'Meta Two'
+      }, {
+        value: 55,
+        name: 'Series 3',
+        className: 'bg-chart-3',
+        meta: 'Meta Three'
+      }]
     });
-    chart.render();
-};
+
+    new Chartist.Bar('.ct-chart2', {
+      
+      series: [
+        [800000, 1200000, 1400000, 1300000]
+      ]
+    }, {
+      stackBars: false,
+      axisY: {
+        labelInterpolationFnc: function(value) {
+          return (value / 1000) + 'k';
+        }
+      }
+    }).on('draw', function(data) {
+      if(data.type === 'bar') {
+        data.element.attr({
+          style: 'stroke-width: 30px'
+        });
+      }
+    });
+
+
+    var ctx = document.getElementById("skills");
+    var data1= {
+        labels: [
+            "Red",
+            "Blue",
+            "Yellow"
+        ],
+        datasets: [
+            {
+                data: [71,29],
+                backgroundColor: [
+                    "#65a5e5",
+                    "#93bfeb"
+                    
+                ]
+            }]
+    };
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: data1,
+        options: {
+            responsive: true,
+            animation:{
+                animateScale:true
+            }
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
