@@ -53,8 +53,12 @@
 
                         </div>
                     </div>
-                    <a href="<?php echo base_url(); ?>admin/pass_card_detail">Icon detail</a>
                 </td>
+                <td>
+                    <a class="detail" href="<?php echo base_url(); ?>admin/pass_card_detail"><span></span></a>
+                </td>
+                    
+                
 				<?php echo '</tr>'; ?>
 			<?php endforeach; ?>
 
