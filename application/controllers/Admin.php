@@ -117,6 +117,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->view_product_detail();		
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function edit_product()
+	{
+
+		$data['subview'] = 'pages/admin/edit_product';
+		$data['title']   = 'All products';
+		$data['display_data'] = $this->data_model->view_edit_product();		
+		$this->load->view('pages/admin/main', $data);
+	}
 	/*Product*/
 	public function closed_secondary_vouchers()
 	{

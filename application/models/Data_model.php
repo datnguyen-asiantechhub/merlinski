@@ -2,6 +2,51 @@
 
 class Data_model extends CI_Model
 {
+	public function view_edit_product(){
+			$p_detail = array(
+			'basic'             => [
+				'name' => 'Spring season open ticket', 'code' => '214343254325',
+				'description'=>'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt risus eget semper feugiat. Duis sit amet aliquam lacus. Nulla tellus massa, gravida at risus sed, interdum semper sapien.</p>',
+				'base_price'=>'20 USD'
+			],
+			'advance' => [
+				'ticket_type'     => 'Open',
+				'valid_from'        => 'The day after',
+				'valid_to'     => '1 year later',
+				'use_times' => 'Unlimited',
+				'number_of_seats' => 80
+			],
+			'pricing'      => [
+				'time'=>
+					[
+						'spring'=>'100% base price',
+						'Summer'=>'50% base price',
+						'Autumn'=>'70% base price',
+						'Winter'=>'120% base price'
+					],
+				'remaining_seat' => 
+					[
+						'Under 25%'=>'150% base price',
+						'From 25% to 50%'=>'120% base price',
+						'From 50% to 75%'=>'100% base price',
+						'From 75% to 100%'=>'100% base price'
+					]
+			],
+			'media'      => array(
+				'image'=> ['u68.png','u68.png','u68.png'],
+				'video'=> ['u97.png']
+				),
+			'related_products' => [
+				['ticket'=>'2017 Season Pass','price'=>5,'use_times'=>'Unlimited','created_on'=>'12/12/2016'],
+				['ticket'=>'2017 Season Pass','price'=>5,'use_times'=>'Unlimited','created_on'=>'12/12/2016'],
+				['ticket'=>'2017 Season Pass','price'=>5,'use_times'=>'1','created_on'=>'12/12/2016'],
+				['ticket'=>'2017 Season Pass','price'=>5,'use_times'=>'1','created_on'=>'12/12/2016'],
+				['ticket'=>'2017 Season Pass','price'=>5,'use_times'=>'1','created_on'=>'12/12/2016']				
+			]
+
+		);
+		return $p_detail;
+	}
 	public function view_product_detail(){
 		$p_detail = array(
 			'basic'             => [
