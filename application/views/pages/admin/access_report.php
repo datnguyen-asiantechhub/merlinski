@@ -1,9 +1,11 @@
 <h1>Access report</h1>
-<div class="jumbotron">
+<div class="jumbotron general-information">
 	<h5>THIS MONTH</h5>
-	<p class="report-time">1500 times</p>
+	<p>1500 times</p>
 	<div class="compare">
-
+		<div class="insc"><span class="glyphicon glyphicon-triangle-top"></span>32.34%</div>
+		<div class="desc"><span class="glyphicon glyphicon-triangle-bottom"></span>0.2%</div>
+		<p>COMPARED TO LAST MONTH</p>
 	</div>
 	<div class="chart-group">
 		
