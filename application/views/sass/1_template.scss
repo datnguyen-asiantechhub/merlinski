@@ -1,6 +1,6 @@
-header{
+/*header{
 	background:	 #0077c0;
-}
+}*/
 
 header{
 	#logo{
@@ -217,9 +217,13 @@ td.style{
 	font-style: normal;
 	font-size: 17px;
 }
+.radio-style{
+	padding-left: 0px;
+	padding-right: 5px;
+}
 /*--------form-control--------*/
-.form-control{
-	width: 60%;
+/*.form-control{
+	width: 100%;
 }
 /*--------end control----------*/
 .badge-style{
