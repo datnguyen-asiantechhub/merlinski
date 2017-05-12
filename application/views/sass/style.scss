@@ -1,5 +1,7 @@
+@import 'mixin';
+@import 'variables';
 @import '1_template';
-@import 'trang_scss';
+@import 'trang';
 @import '2_template';
 @import 'fontface';
 @import 'responsive/320px-max';

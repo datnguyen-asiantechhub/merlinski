@@ -1,0 +1,46 @@
+
+.data-search input{
+	width: 100%;
+}
+h1{	
+	@include h1;
+}
+table{
+	border-color: $border-color;
+	td,thead{
+		padding:17px 0 !important;
+		&:first-child{
+			padding-left: 17px !important;
+		}
+		&:last-child{
+			padding-right: 17px !important;
+		}
+	}
+}
+.page-direction{
+	.fa{
+		position: relative;
+		font-size: 26px;
+		&:before{
+			position: absolute;
+			right: 8px;
+			bottom: 0;
+		}
+	}
+}
+.page-direction{
+	max-width: 62px;
+}
+.pagin{
+	padding-right: 10px;
+	label{
+		margin-right: 0;
+		margin-left: 3px;
+	}
+	.select2.select2-container.select2-container--default{
+		margin-top: -3px;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow{
+		right: 8px;
+	}
+}
