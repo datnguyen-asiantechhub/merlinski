@@ -1,7 +1,7 @@
 <div class="data-search">
     <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search for ZXY">
-        <button class="btn search-data" value=""></button>
+        <input type="text" class="form-control" placeholder="Search for ZXY" id="keyword">
+        <input type="submit" class="btn search-data" value="" id="sumit_form">
     </div>
 </div>
 <div class="table-responsive">
