@@ -38,9 +38,9 @@
         <nav>
             <ul class="page-direction">
                 <li><a id="prev" href="#"><span
-                                class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a>
+                                class="fa fa-angle-left left-arrow last-page"></span></a>
                 </li>
-                <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+                <li><a id="next" href="#"><span class="fa fa-angle-right right-arrow"></span></a></li>
             </ul>
             <div class="pagin">
                 <label>Page</label>

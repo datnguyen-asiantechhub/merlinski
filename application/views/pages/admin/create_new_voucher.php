@@ -1,98 +1,83 @@
-<div>
-	<div class="container">
-		<div>
-			<h1>Create new voucher</h1>
-			<img src="<?php echo base_url();?>application/views/assets/images/underline_03.png" alt="" id="" />
-		</div>
-		<div class="row">
-			<div class="col-md-2">
-					<div class="voucher">
-					<h4>Code</h4>
-						
-					</div>
-					<div class="voucher">
-					<h4>Mass creation</h4>
-						
-					</div>
-					<div class="voucher">
-					<h4>Off percentage</h4>
-						
-					</div>
-					<div class="voucher">
-					<h4>Description</h4>
-					</div>
-					<div class="voucher">
-					<h4>Use times</h4>
-						
-					</div>
-			</div>
-			<div class="col-md-10">
-					
-						<div>
-							<div class="form-inline">
-								<div class="form-group">
-									<input type="radio" name="times">User defied<input type="text" class="form-control" id="inputName">
-								</div>
-							</div>
-	    					
-						
-							
-						
-						
-							<div class="radio"><input type="radio" name="times"><label>Auto generation</label></div>
-						</div>
-							
-						
-						
-					
-					<div>
-						<form class="form-inline">
-							<div class="voucher_1">
-								<input type="text" class="form-control" id="inputName"> To use mass creation, Code must be Auto generate
+<h1>Create new voucher</h1>	
 
-							</div>
-						</form>
-					</div>
-						<div class="voucher_1">
-							<input type="text" class="form-control" id="inputName">
-
-						</div>
-						<div class="voucher_1">
-							<input type="text" class="form-control" id="inputName">
-
-						</div>
-						<div class="form-inline">
-								<div class="form-group voucher_1">
-									<input type="radio" name="times">Single
-									<input type="radio" name="times">Unlimited
-								</div>
-						</div>
-
-					<div style="overflow: visible; ">
-		                <div id="form_datetime"></div>
-		                <input type="hidden" id="useTime">					            
- 					</div>
- 					
-					<div> 
-						<input class="btn btn-warning btn-lg" type="submit" value="Create">
-					</div>
-					
-	
-
-	            			
- 							
+<form action="/action_page.php" class="form-horizontal">
+    <div class="form-group">
+	      <label class="control-label col-sm-3 pull-left label-inline" for="code">Code</label>
+	      <div class="col-sm-9">
+	      		<div class="radio">
+	      			<div class="row">
+	      			<div class="col-sm-5 label-inline">
+	      				<label><input type="radio" name="gender" value="userdefined" checked >User defined</label>
+	      			</div>
+	      			<div class="col-sm-7">
+	      				<input type="text" class="form-control" id="description">
+	      			</div>
+	      			</div>
+	      			
+	      		</div>	 
+	      		           		
+	      		
+	      </div>
+    </div>
+    <div class="form-group">
+    	 <label class="control-label col-sm-3 pull-left"></label>
+	      <div class="col-sm-9">	      		 
+	      		<div class="radio">
+	      			<label><input type="radio" name="gender" value="1"> Auto generation</label>	      			
+	      		</div>	           		
+	      		
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3" for="email">Mass creation:</label>
+	      <div class="col-sm-9">
+	      		<div class="row">
+		      		<div class="col-sm-5">
+		      			<input type="text" class="form-control" id="mass_creation" placeholder="Enter email">
+		      		</div>
+		      		<span>To use mass creation, Code must be Auto generate</span>
+		      	</div>
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3" for="email">Off percentage</label>
+	      <div class="col-sm-9">	      		
+      			<input type="text" class="form-control" id="off_percent" placeholder="Off percentage">		      		
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3" for="email">Description</label>
+	      <div class="col-sm-9">	      		
+      			<input type="text" class="form-control" id="description" placeholder="Description">		      		
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3 pull-left" for="code">Uses times</label>
+	      <div class="col-sm-9">
+	      		<input type="radio" name="gender" value="userdefined" checked> Single      		
+	      		<input type="radio" name="gender" value="autogeneration"> Unlimited
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3 pull-left" for="code">Valid to</label>
+	      <div class="col-sm-9">
+	      		<div style="overflow: visible;">
+				<div id="form_datetime"></div>
+				<input type="hidden" id="useTime">
+			</div>	
+	      </div>
+    </div>
+    <div class="form-group">
+	      <label class="control-label col-sm-3 pull-left"></label>
+	      <div class="col-sm-9">
+	      		<input class="btn btn-warning btn-lg" type="submit" value="Create">	
+	      </div>
+    </div>
+   
+</form>
 
 
-						
-					
-			</div>
-				
-			
-			
-		</div>
-	</div>	
-				
-						
-</div>
-	
+
+
+
 

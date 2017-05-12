@@ -16,7 +16,7 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 
-  public function Create(){
+  public function create_new_voucher(){
       $data['subview'] = 'pages/admin/create_new_voucher';
       $data['title'] = 'Admin System';
       $this->load->view('pages/admin/main',$data);
@@ -111,7 +111,7 @@ class Admin extends CI_Controller
 	{
 
 		$data['subview'] = 'pages/admin/closed_secondary_vouchers';
-		$data['title']   = 'Close vouchers';
+		$data['title']   = 'Close secondary sale vouchers';
 		$data['display_data'] = $this->data_model->closed_secondary_vouchers();
 		$this->load->view('pages/admin/main', $data);
 	}
