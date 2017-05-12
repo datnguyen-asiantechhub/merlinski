@@ -173,6 +173,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->list_orders_cancelled();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function pass_card_detail()
+	{
+
+		$data['subview'] = 'pages/admin/pass_card_detail';
+		$data['title']   = 'View all orders';
+		$data['display_data'] = $this->data_model->list_orders();
+		$this->load->view('pages/admin/main', $data);
+	}
 	/*Function for orders*/
 }
 ?>
