@@ -6,8 +6,8 @@ class Data_model extends CI_Model
 			$p_detail = array(
 			'basic'             => [
 				'name' => 'Spring season open ticket', 'code' => '214343254325',
-				'description'=>'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt risus eget semper feugiat. Duis sit amet aliquam lacus. Nulla tellus massa, gravida at risus sed, interdum semper sapien.</p>',
-				'base_price'=>'20 USD'
+				'description'=>'Lipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt risus eget semper feugiat. Duis sit amet aliquam lacus. Nulla tellus massa, gravida at risus sed, interdum semper sapien.',
+				'base_price'=>'20'
 			],
 			'advance' => [
 				'ticket_type'     => 'Open',

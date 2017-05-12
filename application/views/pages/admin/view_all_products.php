@@ -38,7 +38,7 @@
                 <a class="detail" href="<?php echo base_url(); ?>admin/view_product_detail"><span></span></a>
             </td>
             <td>
-                <a class="edit detail" href="<?php echo base_url(); ?>admin/customer_detail"><i class="fa fa-pencil"></i></a>
+                <a class="edit detail" href="<?php echo base_url(); ?>admin/edit_product"><i class="fa fa-pencil"></i></a>
             </td>
             <td>
                 <a class="remove detail" href="#" data-toggle="modal" data-target="#myModal<?php echo $key + 1; ?>"><span></span></a>

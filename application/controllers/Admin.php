@@ -121,7 +121,7 @@ class Admin extends CI_Controller
 	{
 
 		$data['subview'] = 'pages/admin/edit_product';
-		$data['title']   = 'All products';
+		$data['title']   = 'Update product';
 		$data['display_data'] = $this->data_model->view_edit_product();		
 		$this->load->view('pages/admin/main', $data);
 	}
