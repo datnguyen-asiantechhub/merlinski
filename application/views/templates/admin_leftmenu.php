@@ -15,7 +15,7 @@
                 <li><a href="#">Select2</a></li>
             </ul>
         </li>
-        <li><a href="">Customer</a></li>
+        <li><a href="<?php echo base_url().index_page();?>/admin/customer">Customer</a></li>
         <li class="sub-menu">
             <a data-toggle="collapse" data-target="#passcard" href="#"> Pass Card<span class="glyphicon glyphicon-chevron-right right-arrow"></span></a>
             <ul class="nav nav-stacked collapse" id="passcard">

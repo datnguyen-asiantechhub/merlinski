@@ -5,7 +5,7 @@
   </div>
 </div>
 <div class="table-responsive">
-<h1>All Customer</h1>
+  <h1><?php echo $title; ?></h1>
   <table class="table table-striped data-table">
     <tr>
       <th>No.</th>
@@ -18,44 +18,26 @@
       <th>Registered on</th>
       <th></th>
     </tr>
+    <?php foreach ($display_data as $key => $customers): ?>
     <tr>
-      <td>1</td>
-      <td>Robert Kenedy</td>
-      <td>abd@gmail.com</td>
-      <td>+8555555555</td>
-      <td>Australia</td>
-      <td>Sydney</td>
-      <td>15 Orchard Road</td>
-      <td>12/03/2017</td>
-      <td><a class="detail" href=""><span></span></a></td>
+      <?php echo '<tr>'; ?>
+            <td><?php echo $key + 1; ?></td>
+            <td><?php echo $customers['name']; ?></td>
+            <td><?php echo $customers['email']; ?></td>
+            <td><?php echo $customers['phone']; ?></td>
+            <td><?php echo $customers['country']; ?></td>
+            <td><?php echo $customers['city']; ?></td>
+            <td><?php echo $customers['address']; ?></td>
+            <td><?php echo $customers['registered_on']; ?></td>
+            <td><a class="detail" href="<?php echo base_url(); ?>admin/customer_detail"><span></span></a></td>
+      <?php echo '</tr>'; ?>
     </tr>
-    <tr>
-      <td>1</td>
-      <td>Robert Kenedy</td>
-      <td>abd@gmail.com</td>
-      <td>+8555555555</td>
-      <td>Australia</td>
-      <td>Sydney</td>
-      <td>15 Orchard Road</td>
-      <td>12/03/2017</td>
-      <td><a class="detail" href=""><span></span></a></td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Robert Kenedy</td>
-      <td>abd@gmail.com</td>
-      <td>+8555555555</td>
-      <td>Australia</td>
-      <td>Sydney</td>
-      <td>15 Orchard Road</td>
-      <td>12/03/2017</td>
-      <td><a class="detail" href=""><span></span></a></td>
-    </tr>
+    <?php endforeach; ?>
   </table>
   <nav>
   <ul class="page-direction">
-        <li><a id="prev" href="#"><span class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a></li>
-        <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+        <li><a id="prev" href="#"><span class="fa fa-angle-left left-arrow last-page"></span></a></li>
+        <li><a id="next" href="#"><span class="fa fa-angle-right right-arrow"></span></a></li>
       </ul>
     <div class="pagin">
       <label>Page</label>
