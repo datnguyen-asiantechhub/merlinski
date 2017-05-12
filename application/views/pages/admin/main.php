@@ -49,7 +49,6 @@
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/select2/select2.full.min.js"></script>
 <<<<<<< HEAD
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/datetimepicker/bootstrap-datepicker.min.js"></script>
 
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/chartist.min.js"></script>
@@ -59,4 +58,5 @@
 >>>>>>> datnguyen-asiantechhub-datnguyenMERLINSKI-43
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/google-chart/loader.js"></script>
 </html>
