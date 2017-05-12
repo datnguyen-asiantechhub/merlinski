@@ -58,6 +58,13 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->customerDetail();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function access_report()
+	{
+
+		$data['subview'] = 'pages/admin/access_report';
+		$data['title']   = 'Acess report';
+		$this->load->view('pages/admin/main', $data);
+	}
 
 	/*Function for vouchers*/
 	public function open_normal_vouchers_list()

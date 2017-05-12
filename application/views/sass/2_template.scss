@@ -4,9 +4,6 @@
 header{
 	background: none !important;
 }
-.table-responsive{
-	overflow: visible;
-}
 /*
 *=========Header=========
 */
@@ -401,6 +398,68 @@ main{
 		width: 130px;
 		font-size: 19px;
 	}
+}
+
+/*================Access Report================*/
+.filter{
+	h4{
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.filter-time-line{
+		.select2-container{
+			margin-left: 10px;
+			width: 80px !important;
+		}
+		.form-group{
+			margin-left: 6%;
+		}
+	}
+	.filter-year{
+		margin-left: 6%;
+		.select2-container{	width: 80px !important;	}
+	}
+	.filter-access-time{
+		.form-group{
+			margin-left: 6%;
+			label{
+				font-weight: normal;
+				margin-right: 5px;
+			}	
+	}
+}
+	.filter-passcard{ padding-left:11%;	}
+}
+.filtered-data{
+	margin-top:20px;
+}
+.filter-btn{
+	width: 260px;
+	background-color: #CC6699;
+	color: #ffffff;
+	margin-right:15%;
+	margin-top:5px;
+}
+.export-pdf, .export-word, .export-excel{
+	margin-top: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		height: 52px;
+		width: 52px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		margin-left: 20px;
+}
+.export-pdf {
+	background-image:url(../../assets/images/pdf.png);
+}
+.export-word {
+	background-image:url(../../assets/images/word.png);
+}
+.export-excel {
+	background-image:url(../../assets/images/excel.png);
 }
 
 /*----------------End of Compoment-------------*/
