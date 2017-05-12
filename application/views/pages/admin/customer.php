@@ -1,9 +1,12 @@
 <div class="data-search">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search for ZXY">
-    <button class="btn search-data" value=""></button>
-  </div>
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search for ZXY">
+      <button class="btn search-data" value=""></button>
+    </div>
+  </form>
 </div>
+<form>
 <div class="table-responsive">
   <h1><?php echo $title; ?></h1>
   <table class="table table-striped data-table">
@@ -56,3 +59,4 @@
    
   </nav>
 </div>
+</form>

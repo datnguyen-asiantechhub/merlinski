@@ -92,6 +92,7 @@ class Admin extends CI_Controller
 
 		$this->load->view('pages/admin/main', $data);
 	}
+	/*Product*/
 	public function create_new_product()
 	{
 
@@ -100,6 +101,23 @@ class Admin extends CI_Controller
 
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function view_all_products()
+	{
+
+		$data['subview'] = 'pages/admin/view_all_products';
+		$data['title']   = 'All products';
+		$data['display_data'] = $this->data_model->view_all_products();
+		$this->load->view('pages/admin/main', $data);
+	}
+	public function view_product_detail()
+	{
+
+		$data['subview'] = 'pages/admin/view_product_detail';
+		$data['title']   = 'All products';
+		$data['display_data'] = $this->data_model->view_product_detail();		
+		$this->load->view('pages/admin/main', $data);
+	}
+	/*Product*/
 	public function closed_secondary_vouchers()
 	{
 
