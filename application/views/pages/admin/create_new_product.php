@@ -1,5 +1,5 @@
 <div class="new-product">
-	<h3><?php echo $title; ?></h3>
+	<h1><?php echo $title; ?></h1>
 	<ul class="nav nav-tabs tabs-panel">
 			<li class="active"><a data-toggle="tab" href="#basic">Basic</a></li>
 			<li><a data-toggle="tab" href="#advance">Advance</a></li>
