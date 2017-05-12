@@ -35,7 +35,7 @@
                 <td><?php echo $created_pass_card['city']; ?></td>
                 <td><?php echo $created_pass_card['address']; ?></td>
                 <td><?php echo $created_pass_card['registered_on']; ?></td>
-                <td><a href="<?php echo base_url(); ?>admin/customer_detail">Generate</a></td>
+                <td><a href="<?php echo base_url(); ?>admin/pass_card_generated">Generate</a></td>
 				<?php echo '</tr>'; ?>
 			<?php endforeach; ?>
 

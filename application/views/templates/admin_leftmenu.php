@@ -20,8 +20,10 @@
         <li class="sub-menu">
             <a data-toggle="collapse" data-target="#passcard" href="#"> Pass Card<span class="glyphicon glyphicon-chevron-right right-arrow"></span></a>
             <ul class="nav nav-stacked collapse" id="passcard">
-                <li><a href="">Select1</a></li>
-                <li><a href="">Select2</a></li>
+                 <li><a href="<?php echo base_url().index_page();?>/admin/create_passcard_list">Create Pass Card</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/view_all_pass_card">View all</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/lost_passcard">Lost Pass Card</a></li>
+                <li><a href="<?php echo base_url().index_page();?>/admin/inactive_pass_card">Inactive</a></li>
             </ul>
         </li>
         <li class="sub-menu">

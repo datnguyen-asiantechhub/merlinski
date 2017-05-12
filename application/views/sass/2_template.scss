@@ -403,7 +403,8 @@ main{
 	border-bottom: solid 4px #f0f0f0;
 	padding-right: 10px;
 	padding-left: 10px;
-	max-width: 605px;
+	/* Khong can nha dat, cu full 100% design ve bay cho nay */
+	//max-width: 605px;
 	margin-bottom: 12px;
 	.active{
 		a{
@@ -430,9 +431,9 @@ main{
 }
 .input-basic-table{
 	th{
-		padding-left: 55px !important;
+		//padding-left: 55px !important;
 		vertical-align: middle !important;
-		width: 195px;
+		//width: 195px;
 	}
 }
 .input-advance-table{

@@ -15,32 +15,34 @@
 		<div class="tab-content">
 			<div class="tab-pane active" id="general">
 				<form method="POST" action="">
-					<table>
-						<tr>
-							<h1>Contact information</h1>
-						</tr>
-						<tr>
-							<td>Customer</td>
-							
-							<td><a href="">Robert Kenny</a> </td>
-							
-							
-						</tr>
-						<tr>
-							<td>Createed on</td>
-							<td>15/05/2016</td>
-	
-						</tr>
-						<tr>
-							<td>Deactivate</td>
-							<td>
-								<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-							</td>
-							
-						</tr>
-						 
-
-					</table>
+					<h3>Contact information</h3>
+					<div class="form-group row">
+						<div class="control-label col-sm-3">
+							Customer
+						</div>
+						<div class="control-group col-sm-9">
+							<a href="#">Robert Kenny</a>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="control-label col-sm-3">
+							Created on
+						</div>
+						<div class="control-group col-sm-9">
+							15/05/2016
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="control-label col-sm-3">
+							Deactivate
+						</div>
+						<div class="control-group col-sm-9">
+							<label class="switch">
+								<input type="checkbox" checked>
+								<div class="slider round"></div>
+							</label>
+						</div>
+					</div>					
 				</form>
           
 			</div>
@@ -76,9 +78,9 @@
 					</table>
 					<nav>
 			        <ul class="page-direction">
-			            <li><a id="prev" href="#"><span class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a>
+			            <li><a id="prev" href="#"><span class="fa fa-angle-left left-arrow last-page"></span></a>
 			            </li>
-			            <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+			            <li><a id="next" href="#"><span class="fa fa-angle-right right-arrow"></span></a></li>
 			        </ul>
 			        <div class="pagin">
 			            <label>Page</label>
@@ -143,9 +145,9 @@
 
 					</table>
 					<ul class="page-direction">
-			            <li><a id="prev" href="#"><span class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a>
+			            <li><a id="prev" href="#"><span class="fa fa-angle-left left-arrow last-page"></span></a>
 			            </li>
-			            <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+			            <li><a id="next" href="#"><span class="fa fa-angle-right right-arrow"></span></a></li>
 			        </ul>
 			        <div class="pagin">
 			            <label>Page</label>

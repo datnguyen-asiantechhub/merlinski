@@ -16,6 +16,7 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 
+
   public function create_new_voucher(){
       $data['subview'] = 'pages/admin/create_new_voucher';
       $data['title'] = 'Admin System';
@@ -108,6 +109,13 @@ class Admin extends CI_Controller
 		$this->load->view('pages/admin/main', $data);
 	}
 	/*Function for vouchers*/
+	public function pass_card_generated(){
+		$data['subview'] = 'pages/admin/pass_card_generated';
+		$data['title']   = 'Pass Card generated succesfully';
+		$data['number']   = '324324532432';
+		$data['customer']   = 'Robert Kenny';		
+		$this->load->view('pages/admin/main', $data);
+	}
 	public function create_passcard_list()
 	{
 
@@ -116,10 +124,10 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->createdpasscardList();
 		$this->load->view('pages/admin/main', $data);
 	}
-	public function lost_passcard_list()
+	public function lost_passcard()
 	{
 
-		$data['subview'] = 'pages/admin/lost_passcard_list';
+		$data['subview'] = 'pages/admin/lost_passcard';
 		$data['title']   = 'Lost Pass Cards';
 		$data['display_data'] = $this->data_model->lostdpasscardList();
 		$this->load->view('pages/admin/main', $data);
@@ -132,11 +140,11 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->inactive_pass_card();
 		$this->load->view('pages/admin/main', $data);
 	}
-	public function active_pass_card()
+	public function view_all_pass_card()
 	{
 
-		$data['subview'] = 'pages/admin/active_pass_card';
-		$data['title']   = 'Inactive Pass Cards';
+		$data['subview'] = 'pages/admin/view_all_pass_card';
+		$data['title']   = 'Active Pass Cards';
 		$data['display_data'] = $this->data_model->active_pass_card();
 		$this->load->view('pages/admin/main', $data);
 	}
