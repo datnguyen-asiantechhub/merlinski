@@ -616,6 +616,46 @@ input[type='radio']:checked{
 	}
 
 /*================Access Report================*/
+.general-information{
+	padding-top:5px;
+	background-color: #1F2834;
+	h5{
+		margin-top: 10px;
+		border-bottom: solid 1px #666666;
+		width: 50%;
+		color: #ffffff;
+		padding-bottom: 5px;
+	}
+	p{
+		font-size: 139px;
+		font-weight: 200;
+		color: #ffffff;
+		line-height: 0.8;
+	}
+	.compare{
+		div{
+			display: inline;
+			font-size: 26px;
+			span{
+				margin: 0 7px 0 15px;
+				font-size: 10px;
+				vertical-align: middle;
+			}
+		}
+		p{
+			font-size: 11px;
+			color: #334660;
+			padding-left: 35px;
+    	margin-top: 2px;
+		}
+		.insc{
+			color: #1BBC9C;
+		}
+		.desc{
+			color: #E94D3C;
+		}
+	}
+}
 .filter{
 	h4{
 		margin-bottom: 15px;
