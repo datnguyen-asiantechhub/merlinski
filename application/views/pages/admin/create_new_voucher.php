@@ -28,21 +28,21 @@
 			</div>
 			<div class="col-md-10">
 					
-						<form class="form-inline">
-							<div class="radio">
-								<label>
-	      							<input type="radio" name="optradio">User defined 
-	    						</label>
-	    					</div>
-	    						 <input type="text" class="form-control" id="inputName">
-						</form>
-						<form>
-							<div class="radio">
-								<label >
-      								<input type="radio" name="optradio">Auto generation
-    							</label>
+						<div>
+							<div class="form-inline">
+								<div class="form-group">
+									<input type="radio" name="times">User defied<input type="text" class="form-control" id="inputName">
+								</div>
 							</div>
-						</form>
+	    					
+						
+							
+						
+						
+							<div class="radio"><input type="radio" name="times"><label>Auto generation</label></div>
+						</div>
+							
+						
 						
 					
 					<div>
@@ -61,16 +61,11 @@
 							<input type="text" class="form-control" id="inputName">
 
 						</div>
-						<div class="voucher_1">
-							<form>
-								<label class="radio-inline">
-							      <input type="radio" name="optradio"> Single
-							    </label>
-							    <label class="radio-inline">
-							      <input type="radio" name="optradio"> Unlimited
-							    </label>	
-							</form>
-							
+						<div class="form-inline">
+								<div class="form-group voucher_1">
+									<input type="radio" name="times">Single
+									<input type="radio" name="times">Unlimited
+								</div>
 						</div>
 
 					<div style="overflow: visible; ">
