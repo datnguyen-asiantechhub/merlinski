@@ -46,8 +46,8 @@
 					<div class="mySlides fade">
 					  
 					  <span>
-					  This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.
-						Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value
+					  Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.
+						 You can override these for your Chart instance by passing a second argument into the Radar method as an object with the keys you want to override.
 					  </span>
 					  
 					</div>
