@@ -261,3 +261,46 @@ a.edit.detail{
 		font-size: 19px;
 	}
 }
+/* Header admin */
+.header_admin{
+	.navbar{
+		border:0;
+		margin:0;
+	}
+	.navbar-header{
+		background: $white;
+	}
+	.navbar-brand{
+		padding:0;
+		background: #fff;
+	}
+	background: #0077c0;
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+			background-color: transparent;
+		}
+	ul{
+		float: right;
+		margin-top: 0;
+		li{
+			&:hover,&:active,&:focus{
+				background: transparent;
+			}
+			a{
+				color: #fff;
+				&:hover,&:active,&:focus{
+					background: transparent;
+				}
+			}
+			ul.dropdown-menu{
+				li{
+					a{
+						color: #333;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+/* Header admin */

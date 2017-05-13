@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 *-----------------------Plugin Chart----------------------------------
 */
    
-  window.onload = function () {
+  /*window.onload = function () {
   var chart = new CanvasJS.Chart("piechart",
   {
       title:{
@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
       ]
     });
     chart.render();
-  };
+  };*/
 //=====================Colume Chart==============
   google.charts.load('current', {packages: ['corechart', 'bar']});
   google.charts.setOnLoadCallback(drawBasic);
@@ -129,12 +129,15 @@ jQuery(document).ready(function($) {
       ]);
 
       var options = {
-        hAxis: {
-          title: 'Time'
-        },
+        
         vAxis: {
           title: 'Popularity'
-        }
+        },
+        width: '600',
+        height: '100%',
+        colors: ['#7ac142'],
+
+        backgroundColor: { fill:'transparent' }
       };
       var linechart = new google.visualization.LineChart(document.getElementById('line_chart'));
 
@@ -143,20 +146,24 @@ jQuery(document).ready(function($) {
 //=======================Pie Chart======================
     var piedata = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          
+          ['Roller Coatster',      1],
+          ['Others',  3],
+          ['Water Park',     11]
+          
         ]);
 
-        var options = {
-          title: 'My Daily Activities'
+        var options = {          
+          backgroundColor: { fill:'transparent' },
+          colors: ['#535176','#454564','#31354B'],
+          legend: 'none',
+           width: '900',
+          height: '500'
         };
 
         var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));
 
-        piechart.draw(piedata);
+        piechart.draw(piedata,options);
   }
 
 //--------------------------------------------------------------------------
