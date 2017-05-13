@@ -72,11 +72,11 @@
 		<div class="form-inline filter-access-time">
 			<div class="form-group form-group-lg">
 				<label>Form</label>
-				<input class="form-control" type="text" name="fromTime">
+				<input class="form-control" type="text" name="fromTime" placeholder="00:00:00" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]">
 			</div>
 			<div class="form-group form-group-lg">
 				<label>To</label>
-				<input class="form-control" type="text" name="toTime">
+				<input class="form-control" type="text" name="toTime" placeholder="00:00:00" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]">
 			</div>
 		</div>
 		<h4>Pass Card</h4>
@@ -84,7 +84,7 @@
 			<input class="form-control" type="text" name="passCard">
 		</div>
 		<div class="form-inline ">
-			<input class="btn btn-lg filter-btn" type="submit" name="" value="Fliter">
+			<input class="btn btn-warning btn-lg filter-btn" type="submit" name="" value="Fliter">
 			<a class="export-pdf"></a>
 			<a class="export-excel"></a>
 			<a class="export-word"></a>
@@ -110,9 +110,9 @@
 	</table>
 	<nav>
         <ul class="page-direction">
-            <li><a id="prev" href="#"><span class="glyphicon glyphicon-chevron-left left-arrow last-page"></span></a>
+            <li><a id="prev" href="#"><span class="fa fa-angle-left left-arrow last-page"></span></a>
             </li>
-            <li><a id="next" href="#"><span class="glyphicon glyphicon-chevron-right right-arrow"></span></a></li>
+            <li><a id="next" href="#"><span class="fa fa-angle-right right-arrow"></span></a></li>
         </ul>
         <div class="pagin">
             <label>Page</label>
