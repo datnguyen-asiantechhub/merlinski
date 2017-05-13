@@ -162,36 +162,32 @@
 						<td>
 							<span class="select-title">Image</span>
 							<div class="input-group select-file">
-					      <input type="text" class="form-control" readonly>
-					      <a class="input-group-btn">
-					        <span class="btn btn-warning" type="button"><input type="file" id="imageFile" class="filePath" name="image">Select File</span>
-					      </a>
+					      <input type="text" class="form-control image-select" readonly>
+					      <label class="input-group-btn">
+					        <span class="btn btn-warning btn-file filePath"><input type="file" id="imageFile" name="image" multiple>Select File</span>
+					      </label>
 					    </div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<div class="thumbnail"><img src="<?php echo base_url();?>application/views/assets/images/18.jpg" alt="images" ></div>
-					    <div class="thumbnail"><img src="<?php echo base_url();?>application/views/assets/images/17.jpg" alt="images" ></div>
-					    <div class="thumbnail"><img src="<?php echo base_url();?>application/views/assets/images/16.jpg" alt="images" ></div>
+							<div id="image-holder"></div>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<span class="select-title">Video</span>
 							<div class="input-group select-file">
-					      <input type="text" class="form-control" readonly>
-					      <a class="input-group-btn">
-					        <span class="btn btn-warning" type="button"><input type="file" id="videoFile" class="filePath" name="video">Select File</span>
-					      </a>
+					      <input type="text" class="form-control video-select" readonly>
+					      <label class="input-group-btn">
+					        <span class="btn btn-warning btn-file filePath"><input type="file" id="videoFile" name="video" multiple>Select File</span>
+					      </label>
 					    </div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<div class="thumbnail"><span></span><div class="video-mask"></div><img src="<?php echo base_url();?>application/views/assets/images/21.jpg" alt="images" ></div>
-					    <div class="thumbnail"><span></span><div class="video-mask"></div><img src="<?php echo base_url();?>application/views/assets/images/20.jpg" alt="images" ></div>
-					    <div class="thumbnail"><span></span><div class="video-mask"></div><img src="<?php echo base_url();?>application/views/assets/images/19.jpg" alt="images" ></div>
+							<div id="video-holder"><span></span><div class="video-mask"></div></div>
 						</td>
 					</tr>
 					<tr>

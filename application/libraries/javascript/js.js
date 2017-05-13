@@ -27,6 +27,89 @@ jQuery(document).ready(function($) {
 
 /*
 *
+*-----------------------Show selected file name + preview---------------------------------
+*/
+    $('#imageFile').change(function() {
+      var file = $(this).prop("files");
+      var listImage = $.map(file, function(val){return val.name});
+      var countFiles = $(this)[0].files.length;
+      var listfilesname = '';
+      var imgPath = $(this)[0].value;
+      var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+      var image_holder = $("#image-holder");
+      image_holder.empty();
+
+      if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+         if (typeof (FileReader) != "undefined") {
+
+             //loop for each file selected for uploaded.
+             for (var i = 0; i < countFiles; i++) {
+
+                 var reader = new FileReader();
+                 reader.onload = function (e) {
+                     $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumbnail",
+                        "alt": listImage[i]
+                     }).appendTo(image_holder);
+                 }
+
+                 listfilesname = listfilesname + listImage[i] + ", ";
+                 image_holder.show();
+                 reader.readAsDataURL($(this)[0].files[i]);
+             }$('.image-select').val(listfilesname.slice(0, -2));
+
+         } else {
+             alert("This browser does not support FileReader.");
+         }
+     } else {
+         $('.image-select').val("Wrong image format! (Only .gif, .png, .jpg, .jpeg)");
+     }
+  });
+
+    $(".video-mask").hide();
+    $('#videoFile').change(function() {
+      var file = $(this).prop("files");
+      var listVideo = $.map(file, function(val){return val.name});
+      var listfilesname = '';
+      var countFiles = $(this)[0].files.length;
+      var vidPath = $(this)[0].value;
+      var extn = vidPath.substring(vidPath.lastIndexOf('.') + 1).toLowerCase();
+      var video_holder = $("#video-holder");
+      video_holder.empty();
+
+      if (extn == "mp4") {
+         if (typeof (FileReader) != "undefined") {
+              $(".video-mask").show();
+             //loop for each file selected for uploaded.
+             for (var i = 0; i < countFiles; i++) {
+
+                 var reader = new FileReader();
+                 reader.onload = function (e) {
+                     $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumbnail",
+                        "alt": listVideo[i]
+                     }).appendTo(video_holder);
+                 }
+
+                 listfilesname = listfilesname + listVideo[i] + ", ";
+                 video_holder.show();
+                 reader.readAsDataURL($(this)[0].files[i]);
+             }$('.video-select').val(listfilesname.slice(0, -2));
+
+         } else {
+             alert("This browser does not support FileReader.");
+         }
+     } else {
+         $('.video-select').val("Wrong video format! (Only mp4 file)");
+     }
+  });
+
+//-------------------------------------------------------------------
+
+/*
+*
 *-----------------------Plugin Chart----------------------------------
 */
    
