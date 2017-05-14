@@ -1,6 +1,10 @@
 jQuery(document).ready(function($) {
   $('select').select2();
 
+
+
+  
+
 /*
 *-----------------------Plugin datepicker----------------------------------
 *
@@ -247,7 +251,31 @@ jQuery(document).ready(function($) {
         var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));
 
         piechart.draw(piedata,options);
+        /*Homepage pie chart*/
+        var piedata1 = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            
+            ['Roller Coatster',      1],
+            ['Others',  3],
+            ['Water Park',     11]
+            
+          ]);
+
+          var options1 = {          
+            backgroundColor: { fill:'transparent' },
+            colors: ['#535176','#454564','#31354B'],
+            legend: 'none',
+             width: '200',
+            height: '250'
+          };
+
+          var piechart1 = new google.visualization.PieChart(document.getElementById('pie_chart1'));
+
+          piechart1.draw(piedata1,options1);
   }
+  
+
+
 
 //--------------------------------------------------------------------------
 
@@ -320,4 +348,24 @@ jQuery(document).ready(function($) {
     $( "#high-percent" ).val( $( "#high" ).slider( "value" ) + "%" );
     $( "#max-percent" ).val( $( "#max" ).slider( "value" ) + "%" );
 });
+/*-------------------------------flexslider----------------*/
+var slideIndex = 0;
+  showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 
