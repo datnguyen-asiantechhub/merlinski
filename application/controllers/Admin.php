@@ -207,6 +207,14 @@ class Admin extends CI_Controller
 		$data['display_data'] = $this->data_model->list_orders();
 		$this->load->view('pages/admin/main', $data);
 	}
+	public function sales_report_by_customer()
+	{
+
+		$data['subview'] = 'pages/admin/sales_report_by_customer';
+		$data['title']   = 'View all orders';
+		$data['display_data'] = $this->data_model->list_orders();
+		$this->load->view('pages/admin/main', $data);
+	}
 	/*Function for orders*/
 }
 ?>
