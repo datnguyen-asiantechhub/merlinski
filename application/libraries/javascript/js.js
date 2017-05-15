@@ -113,50 +113,114 @@ jQuery(document).ready(function($) {
 *-----------------------Plugin Chart----------------------------------
 */
    
-//=====================Colume Chart==============
-  google.charts.load('current', {packages: ['corechart']});
-  google.charts.setOnLoadCallback(drawColChart);
-
-  function drawColChart() {
-      var data = google.visualization.arrayToDataTable([
-        ["","Visited", { role: "style" }, {role: 'annotation'} ],
-        ["", 30, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
-        ["", 40, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
-        ["", 50, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
-        
-      ]);
-      
-      var options = {
+//=====================Colume Chart Plugin==============
+Highcharts.chart('col_chart', {
+    chart: {
+        type: 'column',
+        height: 200,
         backgroundColor: 'transparent',
-        vAxis: {
-          minValue: 0,
-          textStyle:{
-             fontName: 'Century Gothic',
-             color: '#FFFFFF',
-          }
-        },
-        annotations: {
-          textStyle: {
-            fontName: 'Century Gothic',
-            fontSize: 16,
-            bold: true,
-            // The color of the text.
-          }
-        },
-        chartArea:{
-          width: '90%'
-        },
-        bar: {groupWidth: "100%", backgroundColor: '#c8c8c8' },
-        legend: { position: "none" },
-        };
-    var chart = new google.visualization.ColumnChart(
-      document.getElementById('col_chart'));
+        style:{
+          fontFamily: 'Century Gothic'
+        }
+    },
+    
+    title: {
+        text: ''
+    },   
+    
+    xAxis:{
+      visible: false
+    },
 
-    chart.draw(data, options);
-  }
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        },
+        labels: {
+            style: {
+                color: '#ffffff'
+            }
+        }
+    },
+    
+    legend: {
+        enabled: false
+    },
+    
+    tooltip: {
+        pointFormat: 'Visited: <b>{point.y:.1f}</b>'
+    },
+    
+    plotOptions: {
+        series: {
+            pointWidth:20,
+            color: '#c8c8c8',
+            borderColor: '#969696',
+            borderWidth: '2',
+            groupPadding: 0
+        }
+    },
+    
+    series: [{
+        name: 'Population',
+        data: [
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            ["water Park", 30],
+            ["water Park", 40],
+            ["water Park", 50],
+            
+        ],
+        
+        dataLabels: {
+            enabled: true,
+            rotation: 90,
+            color: '#FFFFFF',
+            align: 'center',
+            verticalAlign: 'bottom',
+            format: '{point.name}', // one decimal
+            y: 50, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'Century Gothic'
+            }
+        }
+    }]
+});
 
-
+//---------------------------------------------
+  
 //=======================Pie Chart======================
+    google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(drawPieChart);
     function drawPieChart() {
     var piedata = google.visualization.arrayToDataTable([
@@ -168,11 +232,15 @@ jQuery(document).ready(function($) {
         ]);
 
         var options = {
+          chartArea:{
+            left: '50%'
+          },
          legend: 'none',
          backgroundColor: { fill:'transparent' },
          colors: ['#535176','#454564','#31354B'],
-         width: '600',
-         height: '600'
+         width: '300',
+         height: '300',
+         pieSliceBorderColor: 'transparent'
         };
 
         var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));

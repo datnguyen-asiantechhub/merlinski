@@ -403,8 +403,6 @@ main{
 	border-bottom: solid 4px #f0f0f0;
 	padding-right: 10px;
 	padding-left: 10px;
-	/* Khong can nha dat, cu full 100% design ve bay cho nay */
-	//max-width: 605px;
 	margin-bottom: 12px;
 	.active{
 		a{
@@ -831,4 +829,7 @@ $social-bg: url(../../assets/images/icon-soc.png);
 	border-top:solid 1px grey;
 	color: #d6d6d6;
 	p{margin-top:25px;}
+}
+.highcharts-credits{
+	visibility: hidden !important;
 }
