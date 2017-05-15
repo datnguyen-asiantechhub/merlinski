@@ -1,5 +1,5 @@
 <h1><?php echo $display_data['contact']['name']; ?></h1>
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs tabs-panel">
 
     <li class="active"><a data-toggle="tab" href="#contact">Contact</a></li>
     <li><a data-toggle="tab" href="#billing">Billing</a></li>
@@ -9,11 +9,11 @@
 </ul>
 
 <div class="tab-content">
-    <div id="contact" class="tab-pane fade in active">
+    <div id="contact" class="tab-pane  in active">
         <h3>Contact information</h3>
         <img src="<?php echo base_url(); ?>application/views/assets/images/<?php echo $display_data['contact']['image']; ?>"/>
         <div class="clearfix"></div>
-        <div class="row">
+        <div class="row table input-basic-table">
             <div class="col-sm-2"><label>Name</label></div>
             <div class="col-sm-10"><?php echo $display_data['contact']['name']; ?></div>
             <div class="clearfix"></div>
@@ -37,7 +37,7 @@
         </div>
 
     </div>
-    <div id="billing" class="tab-pane fade">
+    <div id="billing" class="tab-pane ">
         <h3>Billing information</h3>
         <h4>Billing address</h4>
         <div class="flex-container">
