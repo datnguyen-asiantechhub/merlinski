@@ -1,10 +1,6 @@
 jQuery(document).ready(function($) {
   $('select').select2();
 
-
-
-  
-
 /*
 *-----------------------Plugin datepicker----------------------------------
 *
@@ -117,116 +113,80 @@ jQuery(document).ready(function($) {
 *-----------------------Plugin Chart----------------------------------
 */
    
-  /*window.onload = function () {
-  var chart = new CanvasJS.Chart("piechart",
-  {
-      title:{
-          text: "How my time is spent in a week?",
-          fontFamily: "arial black"
-      },
-              animationEnabled: true,
-      legend: {
-          verticalAlign: "bottom",
-          horizontalAlign: "center"
-      },
-      theme: "theme1",
-      data: [
-      {        
-          type: "pie",
-          indexLabelFontFamily: "Garamond",       
-          indexLabelFontSize: 20,
-          indexLabelFontWeight: "bold",
-          startAngle:0,
-          indexLabelFontColor: "MistyRose",       
-          indexLabelLineColor: "darkgrey", 
-          indexLabelPlacement: "inside", 
-          toolTipContent: "{name}: {y}hrs",
-          showInLegend: true,
-          indexLabel: "#percent%",    
-          dataPoints: [
-              {  y: 52, name: "Time At Work", legendMarkerType: "triangle"},
-              {  y: 44, name: "Time At Home", legendMarkerType: "square"},
-              {  y: 12, name: "Time Spent Out", legendMarkerType: "circle"}
-          ]
-      }
-      ]
-    });
-    chart.render();
-  };*/
 //=====================Colume Chart==============
   google.charts.load('current', {packages: ['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+  google.charts.setOnLoadCallback(drawColChart);
 
-  function drawChart() {
+  function drawColChart() {
       var data = google.visualization.arrayToDataTable([
         ["","Visited", { role: "style" }, {role: 'annotation'} ],
-        ["", 30, 'stroke-color: #969696; stroke-width: 2; fill-color: #C8C', 'Water Park'],
-        ["", 40, 'stroke-color: #969696; stroke-width: 2; color: #C8C8C8', 'Water Park'],
-        ["", 50, 'stroke-color: #969696; stroke-width: 2; color: #C8C8C8', 'Water Park'],
- 
+        ["", 30, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
+        ["", 40, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
+        ["", 50, 'stroke-color: #969696; stroke-width: 2', 'Water Park'],
+        
       ]);
       
       var options = {
         backgroundColor: 'transparent',
+        vAxis: {
+          minValue: 0,
+          textStyle:{
+             fontName: 'Century Gothic',
+             color: '#FFFFFF',
+          }
+        },
         annotations: {
-    textStyle: {
-      fontName: 'Times-Roman',
-      fontSize: 18,
-      bold: true,
-      italic: true,
-      // The color of the text.
-      color: '#871b47',
-      // The color of the text outline.
-      auraColor: '#d799ae',
-      // The transparency of the text.
-      opacity: 0.8
-    }
-  },
+          textStyle: {
+            fontName: 'Century Gothic',
+            fontSize: 16,
+            bold: true,
+            // The color of the text.
+          }
+        },
         chartArea:{
           width: '90%'
         },
-        bar: {groupWidth: "100%" },
+        bar: {groupWidth: "100%", backgroundColor: '#c8c8c8' },
         legend: { position: "none" },
         };
-  /*function drawBasic() {
-
-    var data = new google.visualization.DataTable();
-    data.addColumn('timeofday');
-    data.addColumn('number');
-
-    data.addRows([
-      [{v: [8, 0, 0], f: '8 am'}, 1],
-      [{v: [9, 0, 0], f: '9 am'}, 2],
-      [{v: [10, 0, 0], f:'10 am'}, 3],
-      [{v: [11, 0, 0], f: '11 am'}, 4],
-      [{v: [12, 0, 0], f: '12 pm'}, 5],
-      [{v: [13, 0, 0], f: '1 pm'}, 6],
-      [{v: [14, 0, 0], f: '2 pm'}, 7],
-      [{v: [15, 0, 0], f: '3 pm'}, 8],
-      [{v: [16, 0, 0], f: '4 pm'}, 9],
-      [{v: [17, 0, 0], f: '5 pm'}, 10],
-      [{v: [18, 0, 0], f: '6 pm'}, 11],
-    ]);
-
-    var options = {
-      hAxis: {
-        //title: 'Time of Day',
-        //format: 'h:mm a',
-        viewWindow: {
-          min: [7, 30, 0],
-          max: [18, 30, 0]
-        }
-      },
-      /*vAxis: {
-        title: 'Rating (scale of 1-10)'
-      }
-    };*/
     var chart = new google.visualization.ColumnChart(
       document.getElementById('col_chart'));
 
     chart.draw(data, options);
+  }
 
-//=====================line Chart===================    
+
+//=======================Pie Chart======================
+    google.charts.setOnLoadCallback(drawPieChart);
+    function drawPieChart() {
+    var piedata = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Roller Coatster',    1],
+          ['Others',             3],
+          ['Water Park',        11]
+          
+        ]);
+
+        var options = {
+         legend: 'none',
+         backgroundColor: { fill:'transparent' },
+         colors: ['#535176','#454564','#31354B'],
+         width: '600',
+         height: '600'
+        };
+
+        var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+
+        piechart.draw(piedata,options);
+  }
+
+//--------------------------------------------------------------------------
+
+//=====================line Chart===================
+  google.charts.load('current', {packages: ['corechart', 'line']});
+  google.charts.setOnLoadCallback(drawLineChart);
+
+  function drawLineChart() {
     var linedata = new google.visualization.DataTable();
       linedata.addColumn('number', 'X');
       linedata.addColumn('number', 'Dogs');
@@ -247,68 +207,22 @@ jQuery(document).ready(function($) {
       ]);
 
       var options = {
-        
+        chartArea:{
+          width: '100%',
+          left: '10%'
+        },
         vAxis: {
           title: 'Popularity'
         },
-        width: '600',
-        height: '100%',
-        colors: ['#7ac142'],
-
+        width: '650',
+        colors: ['#39BA99'],
+        legend: 'none',
         backgroundColor: { fill:'transparent' }
       };
       var linechart = new google.visualization.LineChart(document.getElementById('line_chart'));
 
       linechart.draw(linedata, options);
-
-//=======================Pie Chart======================
-    var piedata = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          
-          ['Roller Coatster',      1],
-          ['Others',  3],
-          ['Water Park',     11]
-          
-        ]);
-
-        var options = {          
-          backgroundColor: { fill:'transparent' },
-          colors: ['#535176','#454564','#31354B'],
-          legend: 'none',
-           width: '900',
-          height: '500'
-        };
-
-        var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));
-
-        piechart.draw(piedata,options);
-        /*Homepage pie chart*/
-        var piedata1 = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            
-            ['Roller Coatster',      1],
-            ['Others',  3],
-            ['Water Park',     11]
-            
-          ]);
-
-          var options1 = {          
-            backgroundColor: { fill:'transparent' },
-            colors: ['#535176','#454564','#31354B'],
-            legend: 'none',
-             width: '200',
-            height: '250'
-          };
-
-          var piechart1 = new google.visualization.PieChart(document.getElementById('pie_chart1'));
-
-          piechart1.draw(piedata1,options1);
   }
-  
-
-
-
-//--------------------------------------------------------------------------
 
 /*
 *
@@ -379,24 +293,4 @@ jQuery(document).ready(function($) {
     $( "#high-percent" ).val( $( "#high" ).slider( "value" ) + "%" );
     $( "#max-percent" ).val( $( "#max" ).slider( "value" ) + "%" );
 });
-/*-------------------------------flexslider----------------*/
-var slideIndex = 0;
-  showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 

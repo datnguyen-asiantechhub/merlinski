@@ -22,7 +22,7 @@
 				<div id="line_chart"></div>
 			</div>
 			<div class="tab-pane" id="pie-chart">
-				<div id="pie_chart"></div>
+				<div id="pie_chart" ></div>
 				
 			</div>
 		</div>
