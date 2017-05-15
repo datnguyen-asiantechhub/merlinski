@@ -150,13 +150,44 @@ jQuery(document).ready(function($) {
     chart.render();
   };*/
 //=====================Colume Chart==============
-  google.charts.load('current', {packages: ['corechart', 'bar']});
-  google.charts.setOnLoadCallback(drawBasic);
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
 
-  function drawBasic() {
+  function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["","Visited", { role: "style" }, {role: 'annotation'} ],
+        ["", 30, 'stroke-color: #969696; stroke-width: 2; fill-color: #C8C', 'Water Park'],
+        ["", 40, 'stroke-color: #969696; stroke-width: 2; color: #C8C8C8', 'Water Park'],
+        ["", 50, 'stroke-color: #969696; stroke-width: 2; color: #C8C8C8', 'Water Park'],
+ 
+      ]);
+      
+      var options = {
+        backgroundColor: 'transparent',
+        annotations: {
+    textStyle: {
+      fontName: 'Times-Roman',
+      fontSize: 18,
+      bold: true,
+      italic: true,
+      // The color of the text.
+      color: '#871b47',
+      // The color of the text outline.
+      auraColor: '#d799ae',
+      // The transparency of the text.
+      opacity: 0.8
+    }
+  },
+        chartArea:{
+          width: '90%'
+        },
+        bar: {groupWidth: "100%" },
+        legend: { position: "none" },
+        };
+  /*function drawBasic() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('timeofday', 'Time of Day');
+    data.addColumn('timeofday');
     data.addColumn('number');
 
     data.addRows([
@@ -184,8 +215,8 @@ jQuery(document).ready(function($) {
       },
       /*vAxis: {
         title: 'Rating (scale of 1-10)'
-      }*/
-    };
+      }
+    };*/
     var chart = new google.visualization.ColumnChart(
       document.getElementById('col_chart'));
 
