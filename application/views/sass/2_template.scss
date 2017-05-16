@@ -439,11 +439,17 @@ main{
 	margin: auto;
 	label{
 		margin: 0px;
-		display: inline-block;
 		font-weight: normal;
-		padding-left: 25px;
+		padding-left: 5px;
+		cursor: pointer;
 	}
 	.single{float: right;}
+	input[type=radio]{
+		margin-left: 0px !important;
+	}
+	.radio label{
+		padding-left:5px
+	}
 }
 .input-file-table{
 	max-width:595px;
@@ -516,11 +522,6 @@ main{
 			margin-left: 39%;
 	}
 }
-.input-advance-table{
-	input[type=radio]{
-		margin-left: 0px !important;
-	}
-}
 .input-pricing-table{
 	th{
 		width: 180px;
@@ -550,21 +551,32 @@ main{
 }
 /*==============Radio button style============*/
 input[type=radio]{
-	-webkit-appearance: none;
+	opacity:0;
+	/*-webkit-appearance: none;
 	margin-top: 2px;
 	background-color: #ffffff;
 	height: 18px;
 	width:18px;
 	border-radius: 100%;
-	border: 2px solid #7f7f7f;	
-}
-input[type='radio']:checked{
-	background-image: url(../../assets/images/checked.png);
-	background-repeat: no-repeat;
-	background-position: center;
-
+	*/
 }
 
+input[type="radio"] + label:before {
+    display:inline-block;
+    content:"";
+    background: #ffffff ;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius:100%;  
+    border: 2px solid #7f7f7f;
+}
+input[type="radio"]:checked + label:before {
+    background-image: url(../../assets/images/checked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /*==============Style File input===============*/
 .select-file{
 	max-width: 500px;

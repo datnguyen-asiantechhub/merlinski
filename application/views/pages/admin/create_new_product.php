@@ -40,25 +40,25 @@
 					<tr class="row-name">
 						<th>Name</th>
 						<td>
-							<div class="radio-inline"> <input type="radio" name="name" value="1"><label>Open</label></div>
-							<div class="radio-inline single"><input type="radio" name="name" value="2"><label>Single</label></div>
+							<div class="radio-inline"> <input id="radio-1" type="radio" name="name" value="1"><label for="radio-1">Open</label></div>
+							<div class="radio-inline single"><input id="radio-2" type="radio" name="name" value="2"><label for="radio-2">Single</label></div>
 
 						</td>
 					</tr>
 					<tr>
 						<th>User times</th>
 						<td>
-							<div class="radio"><input type="radio" name="times" value="-1"><label>Unlimited</label></div>
-							<div class="radio"><input type="radio" name="times" value="1"><label>Times</label></div>
+							<div class="radio"><input id="radio-3" type="radio" name="times" value="-1"><label for="radio-3">Unlimited</label></div>
+							<div class="radio"><input id="radio-4" type="radio" name="times" value="1"><label for="radio-4">Times</label></div>
 							<input class="form-control short-input" type="text" name="val_usetimes">
 						</td>
 					</tr>
 					<tr>
 						<th>Valid from</th>
 						<td>
-							<div class="radio"><input type="radio" name="validform"><label>Purchase date</label></div>
-							<div class="radio"><input type="radio" name="validform"><label>The date after</label></div>
-							<div class="radio"><input type="radio" name="validform"><label>Specific date</label></div>
+							<div class="radio"><input id="radio-5" type="radio" name="validform"><label for="radio-5">Purchase date</label></div>
+							<div class="radio"><input id="radio-6" type="radio" name="validform"><label for="radio-6">The date after</label></div>
+							<div class="radio"><input id="radio-7" type="radio" name="validform"><label for="radio-7">Specific date</label></div>
 							<div id="datepickerfrom"></div>
 							<input type="hidden" id="selectedFromDate" name="specific_validfrom">
 						</td>
@@ -66,9 +66,9 @@
 					<tr>
 						<th>Valid to</th>
 						<td>
-							<div class="radio"><input type="radio" name="validto"><label>End of year</label></div>
-							<div class="radio"><input type="radio" name="validto"><label>1 year later</label></div>
-							<div class="radio"><input type="radio" name="validto"><label>Specific date</label></div>
+							<div class="radio"><input id="radio-8" type="radio" name="validto"><label for="radio-8">End of year</label></div>
+							<div class="radio"><input id="radio-9" type="radio" name="validto"><label for="radio-9">1 year later</label></div>
+							<div class="radio"><input id="radio-10" type="radio" name="validto"><label for="radio-10">Specific date</label></div>
 							<div id="datepickerto"></div>
 							<input type="hidden" id="selectedToDate" name="Specific_validto">
 						</td>

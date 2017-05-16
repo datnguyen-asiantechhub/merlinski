@@ -52,6 +52,6 @@
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/js.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>application/libraries/javascript/bootstrap-datepicker.min.js"></script>
-<script src="<?php echo base_url();?>application/libraries/highchart/highcharts.js"></script>
+<!--<script type="text/javascript" src="<?php echo base_url();?>application/libraries/highchart/highcharts.js"></script>-->
 
 </html>

@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
 */
    
 //=====================Colume Chart Plugin==============
-Highcharts.chart('col_chart', {
+/*Highcharts.chart('col_chart', {
     chart: {
         type: 'column',
         height: 200,
@@ -215,7 +215,7 @@ Highcharts.chart('col_chart', {
             }
         }
     }]
-});
+});*/
 
 //---------------------------------------------
   
