@@ -195,6 +195,29 @@ jQuery(document).ready(function($) {
 
     chart.draw(data, options);
 
+    /*---------------donut chart---------------------------*/
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data2 = google.visualization.arrayToDataTable([
+      ['Effort', 'Amount given'],
+      ['My all',     100],
+    ]);
+
+    var options2 = {
+      pieHole: 0.5,
+      pieSliceTextStyle: {
+        color: 'black',
+      },
+      legend: 'none'
+    };
+
+    var chart2 = new google.visualization.PieChart(document.getElementById('donut_single'));
+    chart2.draw(data2, options2);
+  }
+
 //=====================line Chart===================    
     var linedata = new google.visualization.DataTable();
       linedata.addColumn('number', 'X');
@@ -261,11 +284,14 @@ jQuery(document).ready(function($) {
             
           ]);
 
-          var options1 = {          
+          var options1 = {
+          chartArea:{
+            left: '20%'
+          },          
             backgroundColor: { fill:'transparent' },
             colors: ['#535176','#454564','#31354B'],
             legend: 'none',
-             width: '200',
+             width: '168',
             height: '250'
           };
 
@@ -362,10 +388,32 @@ function showSlides() {
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1}    
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace("active-slides", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active-slides";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+/*---------------------------stack chart-------------*/
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawTrendlines);
+
+function drawTrendlines() {
+     var data = google.visualization.arrayToDataTable([
+        ['Genre', 'Fantasy & Sci Fi', 'Romance', 'Mystery/Crime', 'General',
+         'Western', 'Literature', { role: 'annotation' } ],
+        ['2010', 10, 24, 20, 32, 18, 5, ''],
+      ]);
+
+      var options = {
+        width: 150,
+        height: 400,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '75%' },
+        isStacked: true,
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
 
