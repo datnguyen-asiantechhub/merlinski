@@ -254,7 +254,33 @@ jQuery(document).ready(function($) {
   google.charts.load('current', {packages: ['corechart', 'line']});
   google.charts.setOnLoadCallback(drawLineChart);
 
+
   function drawLineChart() {
+    /*---------------donut chart---------------------------*/
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data2 = google.visualization.arrayToDataTable([
+      ['Effort', 'Amount given'],
+      ['My all',     100],
+    ]);
+
+    var options2 = {
+      pieHole: 0.5,
+      pieSliceTextStyle: {
+        color: 'black',
+      },
+      legend: 'none'
+    };
+
+    var chart2 = new google.visualization.PieChart(document.getElementById('donut_single'));
+    chart2.draw(data2, options2);
+  }
+
+//=====================line Chart===================    
+
     var linedata = new google.visualization.DataTable();
       linedata.addColumn('number', 'X');
       linedata.addColumn('number', 'Dogs');
@@ -290,6 +316,54 @@ jQuery(document).ready(function($) {
       var linechart = new google.visualization.LineChart(document.getElementById('line_chart'));
 
       linechart.draw(linedata, options);
+
+
+//=======================Pie Chart======================
+    var piedata = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          
+          ['Roller Coatster',      1],
+          ['Others',  3],
+          ['Water Park',     11]
+          
+        ]);
+
+        var options = {          
+          backgroundColor: { fill:'transparent' },
+          colors: ['#535176','#454564','#31354B'],
+          legend: 'none',
+           width: '900',
+          height: '500'
+        };
+
+        var piechart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+
+        piechart.draw(piedata,options);
+        /*Homepage pie chart*/
+        var piedata1 = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            
+            ['Roller Coatster',      1],
+            ['Others',  3],
+            ['Water Park',     11]
+            
+          ]);
+
+          var options1 = {
+          chartArea:{
+            left: '20%'
+          },          
+            backgroundColor: { fill:'transparent' },
+            colors: ['#535176','#454564','#31354B'],
+            legend: 'none',
+             width: '168',
+            height: '250'
+          };
+
+          var piechart1 = new google.visualization.PieChart(document.getElementById('pie_chart1'));
+
+          piechart1.draw(piedata1,options1);
+
   }
 
 /*
@@ -361,4 +435,48 @@ jQuery(document).ready(function($) {
     $( "#high-percent" ).val( $( "#high" ).slider( "value" ) + "%" );
     $( "#max-percent" ).val( $( "#max" ).slider( "value" ) + "%" );
 });
+
+/*-------------------------------flexslider----------------*/
+var slideIndex = 0;
+  showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active-slides", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active-slides";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+/*---------------------------stack chart-------------*/
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawTrendlines);
+
+function drawTrendlines() {
+     var data = google.visualization.arrayToDataTable([
+        ['Genre', 'Fantasy & Sci Fi', 'Romance', 'Mystery/Crime', 'General',
+         'Western', 'Literature', { role: 'annotation' } ],
+        ['2010', 10, 24, 20, 32, 18, 5, ''],
+      ]);
+
+      var options = {
+        width: 150,
+        height: 400,
+        legend: { position: 'top', maxLines: 3 },
+        bar: { groupWidth: '75%' },
+        isStacked: true,
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
 
